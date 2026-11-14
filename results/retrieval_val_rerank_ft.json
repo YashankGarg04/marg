@@ -1,0 +1,204 @@
+{
+ "method": "rerank_ft",
+ "split": "val",
+ "retriever": "models/marg-retriever",
+ "bm25_weight": 0.1,
+ "topk": 30,
+ "reranker": "BAAI/bge-reranker-v2-m3",
+ "candidate_recall": 0.9322981366459627,
+ "overall": {
+  "n": 1610,
+  "target@1": 0.479,
+  "target@3": 0.62,
+  "target@10": 0.775,
+  "target@30": 0.932,
+  "any_rel@3": 0.843,
+  "MRR": 0.576
+ },
+ "by_language": {
+  "english": {
+   "n": 1095,
+   "target@1": 0.592,
+   "target@3": 0.75,
+   "target@10": 0.888,
+   "target@30": 0.983,
+   "any_rel@3": 0.905,
+   "MRR": 0.691
+  },
+  "hinglish": {
+   "n": 35,
+   "target@1": 0.143,
+   "target@3": 0.229,
+   "target@10": 0.371,
+   "target@30": 0.714,
+   "any_rel@3": 0.629,
+   "MRR": 0.213
+  },
+  "hindi": {
+   "n": 37,
+   "target@1": 0.351,
+   "target@3": 0.378,
+   "target@10": 0.595,
+   "target@30": 0.865,
+   "any_rel@3": 0.811,
+   "MRR": 0.411
+  },
+  "bengali": {
+   "n": 34,
+   "target@1": 0.294,
+   "target@3": 0.412,
+   "target@10": 0.471,
+   "target@30": 0.824,
+   "any_rel@3": 0.706,
+   "MRR": 0.369
+  },
+  "telugu": {
+   "n": 34,
+   "target@1": 0.206,
+   "target@3": 0.324,
+   "target@10": 0.529,
+   "target@30": 0.824,
+   "any_rel@3": 0.676,
+   "MRR": 0.314
+  },
+  "marathi": {
+   "n": 31,
+   "target@1": 0.323,
+   "target@3": 0.355,
+   "target@10": 0.548,
+   "target@30": 0.871,
+   "any_rel@3": 0.71,
+   "MRR": 0.392
+  },
+  "tamil": {
+   "n": 43,
+   "target@1": 0.302,
+   "target@3": 0.465,
+   "target@10": 0.674,
+   "target@30": 0.93,
+   "any_rel@3": 0.791,
+   "MRR": 0.414
+  },
+  "urdu": {
+   "n": 42,
+   "target@1": 0.333,
+   "target@3": 0.429,
+   "target@10": 0.571,
+   "target@30": 0.786,
+   "any_rel@3": 0.762,
+   "MRR": 0.415
+  },
+  "gujarati": {
+   "n": 31,
+   "target@1": 0.194,
+   "target@3": 0.323,
+   "target@10": 0.548,
+   "target@30": 0.806,
+   "any_rel@3": 0.71,
+   "MRR": 0.298
+  },
+  "kannada": {
+   "n": 40,
+   "target@1": 0.25,
+   "target@3": 0.3,
+   "target@10": 0.55,
+   "target@30": 0.8,
+   "any_rel@3": 0.725,
+   "MRR": 0.323
+  },
+  "odia": {
+   "n": 40,
+   "target@1": 0.2,
+   "target@3": 0.25,
+   "target@10": 0.525,
+   "target@30": 0.9,
+   "any_rel@3": 0.55,
+   "MRR": 0.288
+  },
+  "malayalam": {
+   "n": 43,
+   "target@1": 0.14,
+   "target@3": 0.395,
+   "target@10": 0.605,
+   "target@30": 0.86,
+   "any_rel@3": 0.744,
+   "MRR": 0.305
+  },
+  "punjabi": {
+   "n": 35,
+   "target@1": 0.2,
+   "target@3": 0.314,
+   "target@10": 0.514,
+   "target@30": 0.771,
+   "any_rel@3": 0.6,
+   "MRR": 0.304
+  },
+  "assamese": {
+   "n": 40,
+   "target@1": 0.2,
+   "target@3": 0.3,
+   "target@10": 0.45,
+   "target@30": 0.8,
+   "any_rel@3": 0.675,
+   "MRR": 0.285
+  },
+  "nepali": {
+   "n": 30,
+   "target@1": 0.2,
+   "target@3": 0.333,
+   "target@10": 0.467,
+   "target@30": 0.767,
+   "any_rel@3": 0.867,
+   "MRR": 0.302
+  }
+ },
+ "by_noise": {
+  "clean": {
+   "n": 354,
+   "target@1": 0.534,
+   "target@3": 0.664,
+   "target@10": 0.816,
+   "target@30": 0.927,
+   "any_rel@3": 0.89,
+   "MRR": 0.622
+  },
+  "heavy": {
+   "n": 671,
+   "target@1": 0.45,
+   "target@3": 0.593,
+   "target@10": 0.744,
+   "target@30": 0.925,
+   "any_rel@3": 0.814,
+   "MRR": 0.547
+  },
+  "light": {
+   "n": 585,
+   "target@1": 0.479,
+   "target@3": 0.626,
+   "target@10": 0.785,
+   "target@30": 0.944,
+   "any_rel@3": 0.848,
+   "MRR": 0.581
+  }
+ },
+ "by_row_type": {
+  "standard": {
+   "n": 1478,
+   "target@1": 0.434,
+   "target@3": 0.587,
+   "target@10": 0.754,
+   "target@30": 0.926,
+   "any_rel@3": 0.829,
+   "MRR": 0.54
+  },
+  "named": {
+   "n": 132,
+   "target@1": 0.977,
+   "target@3": 0.992,
+   "target@10": 1.0,
+   "target@30": 1.0,
+   "any_rel@3": 0.992,
+   "MRR": 0.984
+  }
+ }
+}
