@@ -164,19 +164,39 @@ def scrape_details(s, lang, slugs, out_path: Path):
             pause()
 
 
+def slugs_from_registry(only_rag: bool) -> list:
+    """Read slugs from data/registry/scheme_registry.csv (made by src/make_split.py)."""
+    import csv
+    path = OUT_DIR / "registry" / "scheme_registry.csv"
+    with path.open(encoding="utf-8-sig") as f:
+        rows = list(csv.DictReader(f))
+    if only_rag:   # the schemes that have queries / rules: do these first
+        rows = [r for r in rows if r["in_rag"] == "1" or r["has_queries"] == "1"]
+    return [r["slug"] for r in rows]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--langs", nargs="+", default=LANGUAGES)
-    ap.add_argument("--list-only", action="store_true")
+    ap.add_argument("--list-only", action="store_true",
+                    help="only download the search list, skip detail pages")
+    ap.add_argument("--details-only", action="store_true",
+                    help="skip the list step; take slugs from data/registry/scheme_registry.csv")
+    ap.add_argument("--only-rag", action="store_true",
+                    help="with --details-only: only the ~1,082 schemes that have queries/rules")
     args = ap.parse_args()
 
     s = make_session()
+    registry_slugs = slugs_from_registry(args.only_rag) if args.details_only else None
     for lang in args.langs:
         lang_dir = OUT_DIR / lang
         lang_dir.mkdir(parents=True, exist_ok=True)
         print(f"\n===== {lang} =====")
         try:
-            slugs = scrape_list(s, lang, lang_dir / "schemes_list.jsonl")
+            if args.details_only:
+                slugs = registry_slugs
+            else:
+                slugs = scrape_list(s, lang, lang_dir / "schemes_list.jsonl")
             if not args.list_only:
                 scrape_details(s, lang, slugs, lang_dir / "schemes_detail.jsonl")
         except requests.HTTPError as e:
