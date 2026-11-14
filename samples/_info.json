@@ -1,0 +1,16 @@
+{
+ "splits/val.jsonl": "1795 rows",
+ "splits/train.jsonl": "8407 rows",
+ "splits/test.jsonl": "1798 rows",
+ "cards/scheme_cards.jsonl": "4972 rows",
+ "en/schemes_detail.jsonl": "1482 rows",
+ "hi/schemes_list.jsonl": "4758 rows",
+ "registry": "4972 rows, columns=['slug', 'name', 'level', 'state', 'category', 'tags', 'close_date', 'in_list', 'in_rag', 'has_queries', 'split']",
+ "split_json": {
+  "type": "dict",
+  "len": 4972,
+  "sha256_prefix": "df348a574f05cedd",
+  "md5_prefix": "ffcbf79004cc3ac8"
+ },
+ "rag_schemes": "list, 1082 items"
+}

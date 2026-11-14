@@ -1,0 +1,101 @@
+slug,name,level,state,category,tags,close_date,in_list,in_rag,has_queries,split
+cdccuk,Cancer Day Care Centre - Uttarakhand,state,Uttarakhand,Health & Wellness,Cancer|Day Care Centre|Cancer Patient|Chemotherapy,,1,0,0,train
+ftfpsvd,Free Travel Facility for Person Suffering from Various Diseases,state,Rajasthan,Transport & Infrastructure,Free Travel Facility|Free Transport|Persons With Disabilities|Disease|Differently Abled,,1,0,0,train
+ftfwoff,Free Travel Facility for Widows of Freedom Fighters,state,Rajasthan,Transport & Infrastructure,Free Travel Facility|Widows Of Freedom Fighters|Free Bus Travel,,1,0,0,test
+ipsaeusd,Investment Promotion Scheme (IPS) for MSME Sector: Assistance For Entrepreneurship Under Skill Development,state,Dadra & Nagar Haveli and Daman & Diu,Business & Entrepreneurship,Skill Development|Investment|MSMEs|Incentives|Entrepreneurship|Subsidy|Reimbursement|Water,,1,0,0,train
+mapvmy,Mukhyamantri Atyant Pichhda Varg Medhavriti Yojana,state,Bihar,Education & Learning,Financial Assistance|Student|Extremely Backward Class|Matric,,1,0,0,val
+gassutpssatn,"Grant of Annual Scholarship to the Students Belonging to UT of Puducherry Selected and Studying in the Sainik School, Amaravathi Nagar, Tamil Nadu",state,Puducherry,Education & Learning,Scholarship|Student|School|Education,,1,0,0,train
+ptc,Promotion of Tribal Culture,state,Assam,Sports & Culture,Culture|Heritage|Tribal|Literature|NGO,,1,0,0,train
+sarderd,Scheme for assistance for Research & Development Activities: Assistance to Establish Research & Development/Product Development Centre,state,Gujarat,"Business & Entrepreneurship|Science, IT & Communications",Research And Development|Product Development Centre|Industrial Research,,1,0,0,test
+avyay-napsc-hssc,AVYAY - National Action Plan for Senior Citizens: Health and Shelter for Senior Citizens,central,All,Housing & Shelter|Social welfare & Empowerment|Health & Wellness,Shelter|Healthcare|Welfare|Senior Citizen|Health,,1,0,0,test
+yip,Young Interns Program,state,Rajasthan,Education & Learning,Internship|Education|Student|Government,,1,0,0,train
+rpa,“RAKSHAK PURASKARS’’ Award,state,Goa,"Social welfare & Empowerment|Public Safety,Law & Justice",Award|Crime|Women|Girl|Violence|Harrassment,,1,0,0,train
+mss,Mini Sprinkler Sanyantr,state,Rajasthan,"Agriculture,Rural & Environment",Farmer|Mini Sprinkler Sanyantr|Farming|Agriculture,,1,1,1,train
+smsm,State Merit Scholarship Manipur,state,Manipur,Education & Learning,Scholarship|Meritorious Students|Higher Education|Economically Weaker Sections,,1,0,0,train
+sas,Study Abroad Scholarships (Scheduled Tribe),state,Madhya Pradesh,Education & Learning,Abroad|Scholarships|Scheduled Tribe|Higher Education,,1,0,0,val
+dpmbocwwb,Disability Pension (MBOCWWB),state,Meghalaya,Social welfare & Empowerment,Disability|Pension|Construction Worker|Building Worker|Labour,,1,0,0,train
+nmnf,National Mission on Natural Farming,central,All,"Agriculture,Rural & Environment",Natural Farming|Agro Ecology|Chemical-free Farming,,1,1,1,train
+ignwpsl,Indira Gandhi National Widow Pension Scheme (Ladakh),state,Ladakh,Social welfare & Empowerment,BPL|Indira Gandhi|Pension|Widow,,1,0,0,train
+fafte,Financial Assistance to the Family of Temple Employees,state,Puducherry,Sports & Culture|Social welfare & Empowerment,Employee|Death|Financial Assistance|Insurance|Temple|Welfare,,1,0,0,train
+asdtpwff,Agricultural Skill Development Training Programme For Women Farmers And Farmers,state,Gujarat,"Agriculture,Rural & Environment",Agriculture|Farmer|Women|Training|Skill Development|Youth,,1,0,0,train
+ahcppmay,"Affordable Housing Component in Partnership of Pradhan Mantri Awas Yojana (Urban) under Uttarakhand Housing Policy Rules, 2024",state,Uttarakhand,Housing & Shelter,House|Affordable Housing|Awas,,1,1,1,train
+agmsmeepf,Aatmanirbhar Gujarat Scheme for assistance to MSMEs: EPF Reimbursement to MSMEs,state,Gujarat,Business & Entrepreneurship,Business|Entrepreneurship|MSMEs|Reimbursement,,1,0,0,train
+ysp-mpysc,Young Scientist Program– M.P. Young Scientist Congress,state,Madhya Pradesh,"Science, IT & Communications",Cash Prize|Fellowship|Training|Research Work|Young Scientist,,1,0,0,train
+sagb-bc,Scheme of Assistance to Good Borrowers: ‘B’ Category,state,Puducherry,Business & Entrepreneurship,Industry|Entrepreneur|Loan|Expansion|Machine|Concession,,1,0,0,train
+ssebctv,Stipends to Students of Economically Backward Class for Technical and Vocational Courses after SSC,state,Gujarat,Education & Learning,Education|Economically Backward Class|Stipend|ITI|Vocational Courses,,1,0,0,train
+ascftsctguj,Assistance to Scheduled Castes for Fisheries: Training of Scheduled Caste trainees Gujarat,state,Gujarat,"Agriculture,Rural & Environment",Fish Production|Fish Farming|Fishermen|Fish Farmer|Training Of Scheduled Caste Trainees,,1,0,0,train
+ipsaprtmr,Investment Promotion Scheme (IPS) for MSME Sector: Assistance For Patent Registration /Trade Mark Registration,state,Dadra & Nagar Haveli and Daman & Diu,Business & Entrepreneurship,Patent Registration|Investment|MSMEs|Incentives|Entrepreneurship|Subsidy|Reimbursement|Trade Mark Registration|IPS,,1,0,0,train
+imcsw1012chbocwwb,Incentives for Meritorious Children (Students) of Workers (10th and 12th Class) (HBOCWWB),state,Haryana,Education & Learning,Incentive|Meritorious Student|Construction Worker|Building Worker|Scholarship|Prize Money|Award,,1,0,0,test
+khelchhatravritiuk,Sports Scholarship (UG) - Uttarakhand,state,Uttarakhand,Education & Learning|Sports & Culture,Scholarship|Sports|Students|Undergraduate,,1,1,1,train
+srspy,Sant Ravidaas Shiksha Protsaahan Yojana ,state,Uttar Pradesh,Education & Learning,Education|Financial Assistance|Scholarship,,1,0,0,val
+htagchrt-2,Harvesting Tools Assistance for General Category (HRT-2),state,Gujarat,"Agriculture,Rural & Environment",Harvesting Tool|General Category|HRT-2|Farmer|Financial Assistance|FPO|FPC|FIG|SHG|Co-Operative Society,,1,1,1,train
+rggbkmny,Rajiv Gandhi Gramin Bhoomihin Krishi Majdoor Nyay Yojana,state,Chhattisgarh,"Agriculture,Rural & Environment",Financial Assistance|Agricultural|Landless|Laborer,,1,0,0,train
+sasscdc,Scheme of Assistance to State Scheduled Castes Development Corporations,central,All,Social welfare & Empowerment|Business & Entrepreneurship,Scheduled Caste|Employment|Agriculture|Industry|Transport|Subsidy,,1,0,0,train
+igndpsm,Indira Gandhi National Disability Pension Scheme (Maharashtra),state,Maharashtra,Social welfare & Empowerment,Disability|Pension|PwD|Handicapped,,1,0,0,train
+opa,Operation of Paragliding Activities,state,Uttarakhand,Travel & Tourism|Business & Entrepreneurship,Tandem Pilot|Paragliding Activities|License|Aero Sports,,1,0,0,train
+is,Incubation Scheme,central,All,Business & Entrepreneurship,Capital Support|Plant And Machinery|Financial Support|Business & Entreurprneurship,,1,0,0,test
+faishl,Financial Assistance as Interest Subsidy on Home Loan,central,All,"Banking,Financial Services and Insurance|Housing & Shelter|Social welfare & Empowerment",Housing|Loan|Ex-servicemen|Disabled,,1,0,0,train
+fbmbocwwb,Funeral Benefit (MBOCWWB),state,Meghalaya,Social welfare & Empowerment,Funeral|Death|Construction Worker|Building Worker|Labour|Financial Assistance,,1,0,0,val
+agmsmesapc,Aatmanirbhar Gujarat Scheme for assistance to MSMEs: Assistance for Power Connection Charges,state,Gujarat,Business & Entrepreneurship,Business|Entrepreneurship|Subsidy|Power Connection,,1,0,0,train
+gshhs,Girl Students Health & Hygiene Scheme,state,Arunachal Pradesh,Health & Wellness|Women and Child,Girl|Health|Hygiene|Sanitary Napkin|Student,,1,1,1,train
+sslgiangiaimuif,Scheme For Soft Loan To The Grant-in-aid/ Non-grant In Aid Institutions For Maintenance And Upgradation Of Infrastructure Facilities,state,Goa,"Banking,Financial Services and Insurance|Transport & Infrastructure",Infrastructure|Maintenance|Institution|Loan,,1,0,0,val
+etmaf,Establishment of 12 Milch Animal Farm,state,Gujarat,"Agriculture,Rural & Environment",Animal Husbandry|Rural Employment|Animal Farm,,1,1,1,train
+mbkvy,Mukhyamantri Bhavishyalakshi Kaushalya Vikas Yojana,state,Gujarat,Skills & Employment,Youth|Skill|Training|Employment|Technology|Student|Certification,,1,0,0,test
+bty,Balram Talab Yojana,state,Madhya Pradesh,"Agriculture,Rural & Environment",Farmer|Irrigation|Subsidy|Water|Construction,,1,0,0,test
+spppmppmkusum,Solar Power Pump Project (Component ‘B’) – PM Kusum,state,Rajasthan,"Agriculture,Rural & Environment",Solar Pump Subsidy|Irrigation Support|Renewable Energy|Farmer|Horticulture|Standalone Solar Pump|Agriculture Subsidy,,1,0,0,train
+jros,Jute Retail Outlets Scheme,central,All,Business & Entrepreneurship,Business & Entrepreneurship|Jute Artisans|WSHGs|Outlets,,1,0,0,train
+tifa,Trekking in Forest Area (Scheduled Castes),state,Gujarat,Sports & Culture,Trekking|Forest Awareness|Wildlife Exposure|Eco Tourism|Scheduled Caste,,1,0,0,train
+epcmrs,Export Promotion Council Membership Reimbursement Scheme for Scheduled Caste/Scheduled Tribe,central,All,Business & Entrepreneurship,Reimbursement|Subscription Fee|Membership Fee|Financial Assistance|Scheduled Caste|Scheduled Tribe|Business & Entrepreneurship,,1,0,0,train
+gswjws,Goa State Working Journalists Welfare Scheme,state,Goa,"Social welfare & Empowerment|Science, IT & Communications",Journalist|Welfare|Family|Media|Newspaper,,1,0,0,train
+sgassbstaniphsaip-sscp10p2c,Scheme for Grant of Additional Scholarship to the Students Belonging to Scheduled Tribes of Andaman and Nicobar Islands for Pursuing Higher Studies Anywhere in India Post-Senior Secondary Courses (Post 10+2 Courses),state,Andaman and Nicobar Islands,Education & Learning,Scholarship|Student|Scheduled Tribe|Higher Study|Post-Senior Secondary,,1,0,0,train
+tes,Testing Equipment Scheme,state,Haryana,"Business & Entrepreneurship|Banking,Financial Services and Insurance",Financial Assistance|Business,,1,0,0,train
+uska,Uttarakhand Shaheed Kosh Anudan,state,Uttarakhand,Social welfare & Empowerment,Shaheed Kosh|Martyrs|Dependents|Sainik|Soldiers,,1,0,0,train
+lsmsscst,Laptop Scheme for Meritorious Students of SC/ST,state,Goa,Education & Learning,Student|Education|School|Laptop|Scheduled Caste|Scheduled Tribe,,1,0,0,train
+jkrmy,Jharkhand Krishi Rin Mafi Yojana,state,Jharkhand,"Agriculture,Rural & Environment",Farmer|Crop Loan|Kisan Credit Card|Agriculture,,1,0,0,train
+jrfry,Jharkhand Rajya Fasal Rahat Yojana,state,Jharkhand,"Agriculture,Rural & Environment",Crop Loss|Farmer|Agriculture|Natural Calamity,,1,0,0,val
+sdaocsg,Scheme for Dronacharya Award for Outstanding Coaches in Sports and Games,central,All,Sports & Culture,Award|Sports|Financial Assistance|Coach|Recognition,,1,0,0,train
+fbascs,Food Bill Assistance to SC Students,state,Gujarat,Education & Learning|Social welfare & Empowerment,Student|Hostel|Food Bill|SC|Financial Assistance,,1,1,1,train
+ptascsss1112gs,Private Tuition Assistance to Scheduled Caste Students Studying in Standard 11th & 12th (General Stream),state,Gujarat,Education & Learning,SC|Coaching|Student|Private Tuition|Financial Assistance|General Stream,,1,0,0,test
+satgmsa,State Agriculture Thesis Grant for M.Sc. Agriculture,state,Nagaland,Education & Learning,Agriculture|Thesis Grant|MSc|Student,,1,0,0,train
+facvv-nfch,Financial Assistance To The Child Victims Of Violence Under TheNational Foundation For Communal Harmony,state,Jammu and Kashmir,Social welfare & Empowerment|Education & Learning,Education|Child Victim|Insurance|Orphan|Destitute|Below Poverty Line,,1,0,0,test
+tlnskfdch,Term Loan under NSKFDC- Haryana,state,Haryana,"Business & Entrepreneurship|Banking,Financial Services and Insurance",Term Loan|NSKFDC|HSFDC|Safai Karamcharis|Self-Employment,,1,0,0,test
+mnmkvpsy,Mukhyamantri Nirmaan Majadur Kaushal vikaas evan Parivaar Sashaktikaran Yojana,state,Chhattisgarh,Business & Entrepreneurship,Business|Skill Upgrade|Empowerment,,1,0,0,train
+fatuvas,Financial Assistance to Take up Value Addition to Seafood,state,Goa,"Agriculture,Rural & Environment",Subsidy|Financial Assistance|Fisheries|Construction|Equipment,,1,0,0,train
+atesgephmgchrt2,"Assistance for Tools, Equipment, Shorting/Grading Equipment, PHM Equipment for General Category (HRT-2)",state,Gujarat,"Agriculture,Rural & Environment",Tools|Shorting Equipment|General Category|HRT-2|Farmer|Financial Assistance|Post-Harvest Management|Farmer Group|Cooperative Society,,1,1,1,val
+bauuyapcc,Dr.Babasaheb Ambedkar Udyog Uday Yojana: Assistance for Power Connection Charges,state,Gujarat,Business & Entrepreneurship,Business|Entrepreneurship|MSMEs|Start Up|Scheduled Caste|Scheduled Tribe,,1,0,0,train
+srs-goa,Salary Reimbursement Scheme,state,Goa,Business & Entrepreneurship,Business|Entrepreneur|Salary|Reimbursement|Startup,,1,0,0,train
+bsakad,Bihar Shatabdi Asangathit Karyakshetra Kamagaar Evan Shilpakar Samajik Suraksha Yojana: Accidental Death,state,Bihar,Social welfare & Empowerment|Health & Wellness,Social Security|Unorganised Worker|Craftsmen,,1,0,0,test
+sa-affdf,Subsistence Allowance (Sainik Welfare),state,Puducherry,Social welfare & Empowerment,Financial Asisstance|Allowance|Sainik|Ex-Serviceman|Widow,,1,0,0,train
+famc-hbocwwb,Financial Assistance On Marriage Of Children (HBOCWWB),state,Haryana,Social welfare & Empowerment,Construction Worker|Children|Marriage|Financial Assistance|Social Welfare,,1,0,0,test
+dslas,Disabled State Level Award Scheme,state,Chhattisgarh,Social welfare & Empowerment,Employee|Award|PwD|Employer|Organization,,1,1,1,train
+sfgatjsicat,Scheme for Giving Awards to Junior Artists in Contemporary Art Field,state,Tamil Nadu,Skills & Employment,Award|Financial Assistance|Artists|Exhibition,,1,0,0,train
+jrfbio,Junior Research Fellowship,central,All,Education & Learning,Financial Assistance|Research Scientist|Lecturer|Professor,,1,0,0,train
+ls,Lakshya Scheme,state,Tripura,Education & Learning,Scholarship|Financial Assistance|UPSC|Exam|Interview,,1,0,0,val
+rotffssipsic,Reimbursement of Tution Fee for SC/ST/OBC/Min students in Public Schools in Class I to XII,state,Delhi,Education & Learning,Student|Scheduled Caste|Scheduled Tribe|Other Backward Class|Education|SC|ST|OBC|School,,1,0,0,train
+sdmcr,Scheme for Development Maintenance and Construction of Roads,state,Puducherry,"Banking,Financial Services and Insurance|Business & Entrepreneurship|Transport & Infrastructure",Entrepreneur|Industry|Loan|Investment|Road|Infrastructure,,1,0,0,train
+mspi,Merit Scholarship: Polytechnic Institutions,state,Chhattisgarh,Education & Learning,Student|Education|Scholarship|Financial Support|Polytechnic,,1,0,0,train
+pmmsyrvguj,PMMSY: Refrigerated vehicles - Gujarat,state,Gujarat,"Agriculture,Rural & Environment",Construction Of Plant|Storage|Fishermen|Fish Sellers,,1,0,0,test
+rmfgp,Reimbursement of membership Fee in Government promoted E-Commerce Portals ,central,All,Business & Entrepreneurship,Financial Assistance|Business|Entrepreneurship,,1,0,0,train
+mayhpbocwwb,Mukhyamantri Awas Yojna (HPBOCWWB),state,Himachal Pradesh,Housing & Shelter,Construction Workers|Building Worker|Housing Assistance|Labour,,1,0,0,train
+wbtwsae,West Bengal Transport Workers’ Social Security Scheme: Assistance for Education of Children,state,West Bengal,Education & Learning,Social Security|Transport Worker|Engineering And Medical|Education|Scholarship|Higher Secondary|Graduation|Post-Graduation,,1,1,1,test
+sksptyy,Shravan Kumar Shramik Parivar Tirth Yatra Yojana,state,Uttar Pradesh,Social welfare & Empowerment|Transport & Infrastructure,Financial Assistance|Travel|Pilgrimage,,1,0,0,train
+ifib, Immersion Fellowship in Biotechnology,state,Odisha,"Science, IT & Communications|Education & Learning",Biotechnology Fellowship|Innovation Support|Research Grant|Start-up Promotion|Science & Technology,,1,0,0,train
+mpmpmsa,Monthly Pension for the Maintenance of the Parents of the Martyred Soldier of the Army,state,Madhya Pradesh,Social welfare & Empowerment,Pension|Financial Assistance|Dependent|Parents,,1,0,0,train
+msks,Mukhyamantri Sudharit Kamdhenu Scheme,state,Goa,"Agriculture,Rural & Environment",Farmer|Youth|Dairy|Subsidy|Cattle,,1,0,0,test
+ipsftsvmu,Investment Promotion Scheme (IPS) 2022- for Thrust Sectors: Scheme For Vaccine Manufacturing Units,state,Dadra & Nagar Haveli and Daman & Diu,Business & Entrepreneurship,Thrust Sectors|Vaccine Manufacturing|Incentives|Entrepreneurship|Subsidy|Reimbursement|IPS,,1,0,0,train
+aldspsl,Union Territory of Lakshadweep Pension Scheme for Abandoned Ladies/Destitute,state,Lakshadweep,Social welfare & Empowerment|Women and Child,Financial Assistance|Pension|Women|Divorced|Abandoned|Destitute,,1,0,0,train
+nya,National Youth Award ,central,All,"Health & Wellness|Public Safety,Law & Justice|Social welfare & Empowerment|Travel & Tourism",Youth|Purashkar|National|Social Service|Good Citizens,,1,1,1,val
+els-cl2mc,Education Loan Scheme- Credit Line 2 for Minority Community,state,Haryana,"Banking,Financial Services and Insurance|Education & Learning",Education Loan|Credit Line|Minority Community|Student,,1,0,0,val
+wfctnsjkbocwwb,Workers for Class 9th to 12th Through National Scholarship (JKBOCWWB),state,Jammu and Kashmir,Education & Learning,Worker|Construction|Labour|Education|Scholarship,,1,1,1,train
+swlhps,Scheme For Waiver Of Loans To Handloom And Powerloom Sector,state,Andhra Pradesh,Social welfare & Empowerment,Loan|Weaver|Bank|Self-Help Groups,,1,0,0,test
+bpy,Bhed Palan Yojana,state,Uttarakhand,"Agriculture,Rural & Environment|Business & Entrepreneurship",Sheep Rearing|Sheep|Scheduled Caste|Scheduled Tribe|Self-employment|Subsidy,,1,0,0,train
+pdpspbocwwb,Permanent Disability Pension Scheme (P.B.O.C.W.W.B),state,Punjab,Social welfare & Empowerment,Labour|Building Worker|Construction Worker|Disability Pension|PwD|Person With Disability,,1,0,0,train
+sparsh20gov,Scheme for Promotion of Affordable Rental Smart Housing (SPARSH 2.0): Government Affordable Rental Housing Development Support,state,Dadra & Nagar Haveli and Daman & Diu,Housing & Shelter,Afforable Rental Housing|Land Identification|Government Housing|Economically Weaker Section|Rent Subsidy|Labour,,1,0,0,train
+tnfbsn,The National Family Benefit Scheme (Nagaland),state,Nagaland,Social welfare & Empowerment,Below Poverty Line|Death|Family|Pension|Breadwinner,,1,0,0,train
+dadoe,Development and Dissemination of e-Content,state,Uttarakhand,Education & Learning,Student|Digital Learning|Online Education|E-learning,,1,1,1,train
+otejtpss,Out of Turn Employment to Sportspersons in State Services,state,Uttarakhand,Sports & Culture|Skills & Employment,Employment|Sports Quota Jobs|Athletes|Jobs|Sportspersons|Sports,,1,0,0,test
+sugtpctrcw-t,Skill Development Training - 15 Days Residential Skill Up-gradation Training Programme,state,Telangana,Social welfare & Empowerment|Skills & Employment,Financial Assistance|Training|Construction Worker|Skill Upgradation,,1,0,0,train
+shrestha-m1-ssbcprs,Scheme For Residential Education For Students in High Schools in Targeted Areas (SHRESHTA): Mode 1 - SHRESHTA Schools (Best CBSE Private Residential Schools),central,All,Social welfare & Empowerment|Education & Learning,School|Student|Scholarship|Education|Tuition,,1,0,0,train
+bk,Bee Keeping,state,Uttarakhand,"Agriculture,Rural & Environment|Business & Entrepreneurship",Bee|Bee Colonies|Bee Boxes|Subsidy|Honey Bees,,1,1,1,test
+mmyg,Mukhyamantri Matrushakti Yojana,state,Gujarat,Social welfare & Empowerment|Health & Wellness,Maternal Health|Pregnancy|Nutrition Kit|Infant,,1,0,0,test
+gsfe, Garuda Scheme for Funeral Expense,state,Andhra Pradesh,Social welfare & Empowerment,Social Welfare|Financial Assistance|Deceased|Brahmin,,1,0,0,train

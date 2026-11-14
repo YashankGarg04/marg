@@ -1,0 +1,842 @@
+[
+ {
+  "id": "oapsucmupt",
+  "name": "Old Age Pension Scheme under Chief Minister’s Uzhavar Padhukappu Thittam",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Farmers",
+   "Pension",
+   "Financial Assistance",
+   "Senior Citizen",
+   "Labour",
+   "OAPSUCMUPT"
+  ],
+  "rule": {
+   "min_age": 60,
+   "occupation": "farmer",
+   "state": "tamil nadu"
+  },
+  "state": "tamil nadu",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/oapsucmupt",
+  "description": "The 'Old Age Pension Scheme under Chief Minister’s Uzhavar Padhukappu Thittam' is a state scheme. The scheme aims to give a pension of ₹1,000/- to old-age farmers and destitute agricultural labourers who have membership card under CMPUT."
+ },
+ {
+  "id": "fapsrd",
+  "name": "Financial Assistance to Persons Suffering from Rare Diseases",
+  "category": "Social welfare & Empowerment",
+  "topics": [
+   "Financial Assistance",
+   "Rare Diseases",
+   "FAPSRD"
+  ],
+  "rule": {
+   "max_income": 300000,
+   "state": "haryana"
+  },
+  "state": "haryana",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/fapsrd",
+  "description": "The scheme “Financial Assistance to Persons Suffering from Rare Diseases” was launched by Social Justice & Empowerment Department, Govt. of Haryana. Under this scheme, financial assistance of ₹3000/- per month will be provided to all persons of Haryana domicile, who are suffering from Rare Diseases."
+ },
+ {
+  "id": "efap",
+  "name": "Exhibition Fair and Publicity",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Exhibition Fair",
+   "Publicity",
+   "Horticulture",
+   "EFAP"
+  ],
+  "rule": {
+   "occupation": "farmer",
+   "state": "madhya pradesh"
+  },
+  "state": "madhya pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/efap",
+  "description": "The scheme aims to promote departmental schemes and disseminate information about the technology of fruit, flower, vegetable, and spice crops to farmers through exhibitions and seminars organized at the district and block levels."
+ },
+ {
+  "id": "umaguptafellowshipuk",
+  "name": "Smt. Uma Gupta Fellowship for M.Sc. Agriculture (Genetics & Plant Breeding) Students",
+  "category": "Education & Learning",
+  "topics": [
+   "Genetics",
+   "Plant Breeding",
+   "Student",
+   "MSc Agriculture",
+   "Fellowship",
+   "SUGFMSA"
+  ],
+  "rule": {
+   "occupation": "student",
+   "state": "uttarakhand"
+  },
+  "state": "uttarakhand",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/umaguptafellowshipuk",
+  "description": "The scheme aims to provide financial assistance and encourage meritorious students pursuing the M.Sc. Agriculture (Genetics & Plant Breeding) course by offering a fellowship of ₹1000/- for three semesters, thereby reducing their economic burden."
+ },
+ {
+  "id": "premssd",
+  "name": "Pre-Matric Scholarship for Students with Disabilities, DNH & DD",
+  "category": "Education & Learning",
+  "topics": [
+   "Pre-Matric",
+   "Scholarship",
+   "Students",
+   "Person With Disability",
+   "Disability",
+   "PREMSSD"
+  ],
+  "rule": {
+   "max_income": 250000,
+   "disability": true,
+   "occupation": "student",
+   "state": "dadra & nagar haveli and daman & diu"
+  },
+  "state": "dadra & nagar haveli and daman & diu",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/premssd",
+  "description": "The scheme provides a maintenance allowance of ₹500 per month for day scholars and ₹800 per month for hostellers, a disability allowance of up to ₹4,000 per annum, and a book allowance of ₹1,000 per annum to support the school education of students with disabilities."
+ },
+ {
+  "id": "uadtas",
+  "name": "Use of Advanced Drone Technology (Agriculture Aircraft) in Agriculture Sector",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Agriculture",
+   "Farmer",
+   "Drone Technology",
+   "Crop Protection Chemicals",
+   "Fertilizers",
+   "UADTAS"
+  ],
+  "rule": {
+   "occupation": "farmer",
+   "state": "gujarat"
+  },
+  "state": "gujarat",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/uadtas",
+  "description": "The scheme \"Use of Advanced Drone Technology (Agriculture Aircraft) in Agriculture Sector\" introduced by the Agriculture, Farmers Welfare and Cooperation Dept., Gujarat, aims to promote the use of advanced drone technology for spraying crop protection chemicals and bio-fertilizers, etc."
+ },
+ {
+  "id": "pocs",
+  "name": "Production Of Certified Seeds",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Agriculture",
+   "Farmer",
+   "Certified Seeds",
+   "Production Of Seeds",
+   "POCS"
+  ],
+  "rule": {
+   "occupation": "farmer",
+   "state": "tamil nadu"
+  },
+  "state": "tamil nadu",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/pocs",
+  "description": "The \"Production of Certified Seeds\" scheme, offers a subsidy to farmers for producing certified seeds of Pulses."
+ },
+ {
+  "id": "uy",
+  "name": "Udita Yojana",
+  "category": "Health & Wellness",
+  "topics": [
+   "Health",
+   "Wellness",
+   "Hygiene",
+   "UY"
+  ],
+  "rule": {
+   "min_age": 18,
+   "max_age": 49,
+   "gender": "female",
+   "state": "madhya pradesh"
+  },
+  "state": "madhya pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/uy",
+  "description": "Madhya Pradesh State Government started \"Udita Yojana\" for women health promotions."
+ },
+ {
+  "id": "ads",
+  "name": "Ashadeepa Scheme",
+  "category": "Skills & Employment",
+  "topics": [
+   "Employment",
+   "Scheduled Caste",
+   "Scheduled Tribe",
+   "Apprentice Trainee",
+   "Skill Development",
+   "ADS"
+  ],
+  "rule": {
+   "castes": [
+    "sc",
+    "st"
+   ],
+   "state": "karnataka"
+  },
+  "state": "karnataka",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/ads",
+  "description": "The scheme was introduced by the Government of Karnataka in the 2017-18 budget to encourage private sector industries and companies to provide employment opportunities to persons belonging to the Scheduled Caste and Scheduled Tribe categories, ensuring social justice."
+ },
+ {
+  "id": "cdpnerqucdy",
+  "name": "Coffee Development Programme in North Eastern Region: Quality Upgradation / Certification: Drying Yards",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Agriculture",
+   "Farmer",
+   "Subsidy",
+   "DBT",
+   "CDPNER:QUC:DY"
+  ],
+  "rule": {
+   "castes": [
+    "st"
+   ]
+  },
+  "state": null,
+  "level": "central",
+  "url": "https://www.myscheme.gov.in/schemes/cdpnerqucdy",
+  "description": "The scheme \"Quality Upgradation / Certification: Drying Yards\" aims to facilitate the improvement of the quality of coffee produced by growers by encouraging them to establish infrastructure for quality enhancement and obtain certification for their coffees, enabling them to earn better returns."
+ },
+ {
+  "id": "wbcism",
+  "name": "Weather Based Crop Insurance Scheme",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Crop Insurance",
+   "Weather Risk",
+   "Farmer",
+   "WBCISM"
+  ],
+  "rule": {
+   "occupation": "farmer",
+   "state": "madhya pradesh"
+  },
+  "state": "madhya pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/wbcism",
+  "description": "The scheme aims to provide crop insurance protection to farmers against weather-related risks under the Pradhan Mantri Fasal Bima Yojana. It ensures financial support to farmers affected by adverse weather conditions."
+ },
+ {
+  "id": "cklpr",
+  "name": "Chhatraon Ke Liye Protsahan Rashi",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Education",
+   "Girl",
+   "Child Development",
+   "Financial",
+   "CKLPR"
+  ],
+  "rule": {
+   "gender": "female",
+   "occupation": "student",
+   "state": "rajasthan"
+  },
+  "state": "rajasthan",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/cklpr",
+  "description": "In the \"Chhatraon Ke Liye Protsahan Rashi\" scheme to encourages girl students to study agriculture subject and provides financial assistance to economically disadvantaged students who may face challenges in accessing education due to financial constraints."
+ },
+ {
+  "id": "so1ylm",
+  "name": "Scheme for the Welfare of Schedule Caste Families in Fisheries Sector: Subsidy on 1st Year Lease Money",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Subsidy",
+   "Fish Farming",
+   "Schedule Caste",
+   "Lease Money",
+   "Pond",
+   "SWSCFFSS1YLM"
+  ],
+  "rule": {
+   "min_age": 18,
+   "state": "haryana"
+  },
+  "state": "haryana",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/so1ylm",
+  "description": "The objective of the scheme is to provide full-time employment to individuals from Scheduled Caste families in the fisheries sector and to uplift these families by promoting fish farming through financial assistance for leasing Panchayati ponds or watershed areas."
+ },
+ {
+  "id": "icar-pms-scstc",
+  "name": "ICAR - Post Matric Scholarship for Scheduled Caste / Scheduled Tribes Candidates",
+  "category": "Education & Learning",
+  "topics": [
+   "Post Matric",
+   "Scholarship",
+   "Agriculture",
+   "Scheduled Caste",
+   "Scheduled Tribe",
+   "ICARPMSSCSTC"
+  ],
+  "rule": {
+   "occupation": "student"
+  },
+  "state": null,
+  "level": "central",
+  "url": "https://www.myscheme.gov.in/schemes/icar-pms-scstc",
+  "description": "The scheme aims to provide Post-Matric Scholarship to Scheduled Castes/ Scheduled Tribes candidates for study at Bachelor Degree programme in various branches of Agriculture, viz. B.Sc. (Agri.), B.V.Sc., B.Sc. (Agril. Engg.), B.Sc. (Home Science), B.F.Sc., B.Sc. (Forestry) etc."
+ },
+ {
+  "id": "mgpy",
+  "name": "Mukhyamantri Gram Parivahan Yojana",
+  "category": "Social welfare & Empowerment",
+  "topics": [
+   "Vehicle Purchase Grant",
+   "E-Rickshaw Subsidy",
+   "Healthcare Transportation",
+   "E-Mobility Promotion",
+   "MGPY"
+  ],
+  "rule": {
+   "residence": "rural",
+   "state": "bihar"
+  },
+  "state": "bihar",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/mgpy",
+  "description": "The Scheme provides financial assistance for purchasing vehicles to enhance transportation facilities in rural areas. It includes grants for regular vehicles, e-rickshaws, and ambulances under specified conditions."
+ },
+ {
+  "id": "seh-tmdummapuy",
+  "name": "Scheme for Establishment of Hi-Tech and Mini Dairy Units under Mukhya Mantri Antyodaya Parivaar Utthan Yojana",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Hi-Tech",
+   "Mini Dairy Unit",
+   "Animal Husbandry",
+   "Subsidy",
+   "Milch Animal",
+   "Financial Assistance",
+   "SEH-TMDUMMAPUY"
+  ],
+  "rule": {
+   "min_age": 18,
+   "max_age": 60,
+   "occupation": "unemployed",
+   "state": "haryana"
+  },
+  "state": "haryana",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/seh-tmdummapuy",
+  "description": "Under this scheme, a resident of Haryana who is between 18 and 60 years of age can avail a 25% subsidy on the cost of two milch animals. The subsidy can be availed as a loan for the purchase of these milch animals by the beneficiary for the establishment of dairy units with two milch animals."
+ },
+ {
+  "id": "sds",
+  "name": "Sugar Distribution Scheme",
+  "category": "Social welfare & Empowerment",
+  "topics": [
+   "Sugar",
+   "Subsidized Rate",
+   "Food",
+   "SDS"
+  ],
+  "rule": {
+   "bpl": true,
+   "state": "jharkhand"
+  },
+  "state": "jharkhand",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/sds",
+  "description": "The \"Sugar Distribution Scheme\" by the Department of Food, Public Distribution and Consumer Affairs, Government of Jharkhand, aims to provide subsidized sugar to AAY households under NFSA, ensuring access to essential food commodities at affordable rates."
+ },
+ {
+  "id": "raftinguk",
+  "name": "Rafting Course & Internship",
+  "category": "Skills & Employment",
+  "topics": [
+   "Youth",
+   "Rafting Guide",
+   "Rafting Course",
+   "Internship",
+   "RCI"
+  ],
+  "rule": {
+   "min_age": 18,
+   "max_age": 30,
+   "state": "uttarakhand"
+  },
+  "state": "uttarakhand",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/raftinguk",
+  "description": "The scheme aims to train and certify youth of Uttarakhand, aged 18 to 30 years, as skilled and professional river rafting guides. Under this scheme, rafting training and internship opportunities are provided to youth of the state."
+ },
+ {
+  "id": "kkn-mt",
+  "name": "Kalakar Kritadnyata Nidhi: Medical Treatment",
+  "category": "Health & Wellness",
+  "topics": [
+   "Artist",
+   "Medical",
+   "Healthcare",
+   "Surgery",
+   "Subsidy",
+   "Hospital",
+   "KKN-MT"
+  ],
+  "rule": {
+   "min_age": 50,
+   "max_income": 200000,
+   "state": "goa"
+  },
+  "state": "goa",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/kkn-mt",
+  "description": "The scheme aims to provide financial assistance to aged and needy Goan artists and their dependent family members for medical treatment expenses. It covers major or minor surgical treatment costs in local or outstation hospitals, including travelling and accommodation expenses."
+ },
+ {
+  "id": "aspie",
+  "name": "Afforestation Schemes Providing Incentives And Employment To Tribals In Forest",
+  "category": "Skills & Employment",
+  "topics": [
+   "Afforestation Schemes Providing Incentives And Employment To Tribals In Forest"
+  ],
+  "rule": {
+   "occupation": "unemployed",
+   "state": "tamil nadu"
+  },
+  "state": "tamil nadu",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/aspie",
+  "description": "This scheme offers grants to unemployed tribals for afforestation work, providing them with incentives and employment opportunities in forest operations."
+ },
+ {
+  "id": "fpgsdau",
+  "name": "Fellowship for the Post-Graduate Students in Various Faculties Various Faculties of Sardarkrushinagar Dantiwada Agricultural University",
+  "category": "Education & Learning",
+  "topics": [
+   "Agricultural Scholarship",
+   "Fellowship",
+   "Student",
+   "Undergraduate",
+   "FPGSDAU"
+  ],
+  "rule": {
+   "max_age": 28,
+   "occupation": "student",
+   "state": "gujarat"
+  },
+  "state": "gujarat",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/fpgsdau",
+  "description": "The scheme \"Fellowship for the Post-Graduate Students in Various Faculties Various Faculties of Sardarkrushinagar Dantiwada Agricultural University\" provides a monthly fellowship to meritorious Post-Graduate students across various faculties of Sardarkrushinagar Dantiwada Agricultural University."
+ },
+ {
+  "id": "ghpklsy",
+  "name": "Gharelu Hinsa Ki Pidita Ke Liye Sahayta Yojana",
+  "category": "Women and Child",
+  "topics": [
+   "Women",
+   "Victim",
+   "Domestic Violence",
+   "Empowerment",
+   "Financial Support",
+   "GHPKLSY"
+  ],
+  "rule": {
+   "gender": "female",
+   "state": "madhya pradesh"
+  },
+  "state": "madhya pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/ghpklsy",
+  "description": "The Madhya Pradesh State Government started \"Gharelu Hinsa Peedit Ke Liye Sahayta\" Yojana for victims of domestic violence in Madhya Pradesh, offering various types of assistance including financial aid, legal support, and shelter."
+ },
+ {
+  "id": "msgsy",
+  "name": "Mukhyamantri Svadeshi Gau Samvardhan Yojana",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Milk Mission",
+   "Production",
+   "Financial Assistance",
+   "Farmer",
+   "Cow",
+   "MSGSY"
+  ],
+  "rule": {
+   "min_age": 18,
+   "state": "uttar pradesh"
+  },
+  "state": "uttar pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/msgsy",
+  "description": "The \"Mukhyamantri Svadeshi Gau Samvardhan Yojana\" under the \"Nand Baba Milk Mission\" aims to enhance milk productivity and per capita milk availability in Uttar Pradesh by encouraging the purchase of indigenous improved breed cows from outside the state and employment opportunities in rural areas."
+ },
+ {
+  "id": "vdy",
+  "name": "Vahli Dikri Yojana",
+  "category": "Education & Learning",
+  "topics": [
+   "Girl Child",
+   "Girl Education",
+   "Daughter",
+   "Financial Assistance",
+   "VDY"
+  ],
+  "rule": {
+   "gender": "female",
+   "max_income": 200000,
+   "state": "gujarat"
+  },
+  "state": "gujarat",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/vdy",
+  "description": "The Vahli Dikri Yojana by the Government of Gujarat under the Women and Child Development Department . The scheme supports girl children by providing financial aid, free education, and insurance, encouraging higher education and reducing dropout rates."
+ },
+ {
+  "id": "mppteas",
+  "name": "Madhya Pradesh Professional Talent Examination Award Scheme",
+  "category": "Education & Learning",
+  "topics": [
+   "Examination",
+   "Award",
+   "Backward Class",
+   "Student",
+   "Education",
+   "MPPTEAS"
+  ],
+  "rule": {
+   "castes": [
+    "obc"
+   ],
+   "occupation": "student",
+   "state": "madhya pradesh"
+  },
+  "state": "madhya pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/mppteas",
+  "description": "\"M.P. Professional Talent Examination Award Scheme\" aims to recognize and reward backward-class students who excel in professional entrance examinations. Monetary awards are provided to backward-class students who secure the top three positions in entrance examinations like PET, PPT, and MCA."
+ },
+ {
+  "id": "ota-sfi",
+  "name": "One Time Assistance to Small and Marginal Farmers for Purchase of Small Farm Implements (OTA-SFI)",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Agriculture",
+   "Farmers",
+   "Small Farm Implements",
+   "Financial Assistance",
+   "OTA-SFI"
+  ],
+  "rule": {
+   "min_age": 18,
+   "occupation": [
+    "farmer",
+    "entrepreneur"
+   ],
+   "state": "west bengal"
+  },
+  "state": "west bengal",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/ota-sfi",
+  "description": "“One Time Assistance to Small and Marginal Farmers for Purchase of Small Farm Implements (OTA-SFI)” by the Agriculture Department, Government of West Bengal aims to aid the farmers in procuring manually operated small farm implements necessary for agricultural operations."
+ },
+ {
+  "id": "bsa",
+  "name": "Bharat Steel Awards",
+  "category": "Business & Entrepreneurship",
+  "topics": [
+   "Indian Steel Company",
+   "Award",
+   "Steel Production",
+   "Trophy",
+   "Cash Prize",
+   "BSA"
+  ],
+  "rule": {
+   "min_age": 25,
+   "max_age": 60
+  },
+  "state": null,
+  "level": "central",
+  "url": "https://www.myscheme.gov.in/schemes/bsa",
+  "description": "The scheme aims to recognise excellence and outstanding contributions in the Indian steel sector. Through this scheme, awards and incentives are provided to eligible steel companies and individuals."
+ },
+ {
+  "id": "tshmcy",
+  "name": "Theka Shramik, Gharelu Mahila Kamgar Evan Hamaal Shramik Ke Bachcho Hetu Chhaatravrtti Yojana",
+  "category": "Education & Learning",
+  "topics": [
+   "Education",
+   "Scholarship",
+   "TSHMCY"
+  ],
+  "rule": {
+   "gender": "female",
+   "occupation": [
+    "student",
+    "worker"
+   ],
+   "state": "chhattisgarh"
+  },
+  "state": "chhattisgarh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/tshmcy",
+  "description": "Chhattisgarh State Government started a scheme \"Theka Shramik, Gharelu Mahila Kamgar Evan Hamaal Shramik Ke Bachcho Hetu Chhaatravrtti Yojana\" for unorganized worker on 11 March 2015."
+ },
+ {
+  "id": "mdcas",
+  "name": "Maize Development through Cluster Approach Scheme",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Agriculture",
+   "Farmer",
+   "Maize",
+   "Quality Seeds",
+   "MDCAS"
+  ],
+  "rule": {
+   "occupation": "farmer",
+   "state": "meghalaya"
+  },
+  "state": "meghalaya",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/mdcas",
+  "description": "The objectives of the scheme is to increase food grain production in order to attain self-sufficiency by growing high yielding varieties of maize and also by adopting the crop and location specific production technology."
+ },
+ {
+  "id": "mmsy-uk",
+  "name": "Mukhyamantri Swarozgar Yojana - Uttarakhand",
+  "category": "Business & Entrepreneurship",
+  "topics": [
+   "Entrepreneur",
+   "Manufacturing",
+   "Self-Employment",
+   "Employment",
+   "Enterprises",
+   "MMSY-UK"
+  ],
+  "rule": {
+   "min_age": 18,
+   "state": "uttarakhand"
+  },
+  "state": "uttarakhand",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/mmsy-uk",
+  "description": "The scheme aims to promote self-employment and entrepreneurship among the residents of Uttarakhand by providing financial assistance and subsidies for establishing new enterprises or upgrading existing small-scale units."
+ },
+ {
+  "id": "stphcsi",
+  "name": "Sanctioning of Touch Phone to Hearing Challenged – Speech Impaired",
+  "category": "Social welfare & Empowerment",
+  "topics": [
+   "Sanctioning of Touch Phone to Hearing Challenged – Speech Impaired"
+  ],
+  "rule": {
+   "min_age": 18,
+   "occupation": [
+    "student",
+    "entrepreneur"
+   ],
+   "state": "andhra pradesh"
+  },
+  "state": "andhra pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/stphcsi",
+  "description": "The \"Sanctioning of Touch Phone to Hearing Challenged – Speech Impaired\" aims to provide touch phones to hearing and speech-impaired individuals who know sign language as per the Action Plan 2017-18. The Assistant Directors, Department for the Welfare of Different, distribute the touch phones."
+ },
+ {
+  "id": "pfifllesrs",
+  "name": "Programme For Internship For LL.B./ LL.M./ Environmental Studies/ Research Students",
+  "category": "Education & Learning",
+  "topics": [
+   "Student",
+   "Internship",
+   "Legal",
+   "Environment",
+   "Research",
+   "PFIFLLESRS"
+  ],
+  "rule": {
+   "occupation": "student"
+  },
+  "state": null,
+  "level": "central",
+  "url": "https://www.myscheme.gov.in/schemes/pfifllesrs",
+  "description": "The National Green Tribunal provides opportunities to college students by holding Summer Internship Programs (March, April, May and July ordinarily) and Winter Internship Programs (November, December and January ordinarily) Internship Programs for LL.B./ LL.M./ Env. Studies/ Research Students."
+ },
+ {
+  "id": "pofs",
+  "name": "Production of Foundation Seeds",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Agriculture",
+   "Farmer",
+   "Seed Production",
+   "Foundation Seeds",
+   "POFS"
+  ],
+  "rule": {
+   "occupation": "farmer",
+   "state": "tamil nadu"
+  },
+  "state": "tamil nadu",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/pofs",
+  "description": "The \"Production of Foundation Seeds\" scheme, provides subsidies to farmers cultivating seed farms for pulses, offering specific benefits to SC/ST farmers and farm women."
+ },
+ {
+  "id": "bkgs",
+  "name": "Bari (Kitchen Garden) Scheme",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Kitchen Garden",
+   "Horticulture",
+   "Vegetable Seeds",
+   "Farmer",
+   "BKGS"
+  ],
+  "rule": {
+   "bpl": true,
+   "occupation": [
+    "farmer",
+    "worker"
+   ],
+   "state": "madhya pradesh"
+  },
+  "state": "madhya pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/bkgs",
+  "description": "The scheme aims to promote kitchen gardening among poor and small/marginal farmers and agricultural laborers living below the poverty line by providing free vegetable seed packets."
+ },
+ {
+  "id": "favia",
+  "name": "Financial Assistance To Visually Impaired Advocates",
+  "category": "Social welfare & Empowerment",
+  "topics": [
+   "Advocate",
+   "Visually Impaired",
+   "Financial Assistance",
+   "Court",
+   "Blind",
+   "FAVIA"
+  ],
+  "rule": {
+   "max_income": 100000,
+   "disability": true,
+   "state": "kerala"
+  },
+  "state": "kerala",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/favia",
+  "description": "The scheme “Financial Assistance to visually impaired Advocates” was launched by the Department of Social Justice, Government of Kerala."
+ },
+ {
+  "id": "anmukhopadhyayuk",
+  "name": "Dr. A.N. Mukhopadhyay Gold Medal Award (B.Sc. Agriculture - Final Year Student)",
+  "category": "Education & Learning",
+  "topics": [
+   "Student",
+   "Award",
+   "BSc Agriculture",
+   "Gold Medal",
+   "DRANMGMA"
+  ],
+  "rule": {
+   "occupation": "student",
+   "state": "uttarakhand"
+  },
+  "state": "uttarakhand",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/anmukhopadhyayuk",
+  "description": "The scheme aims to encourage meritorious students pursuing a B.Sc. Agriculture course in their final year of study, thereby recognizing their academic excellence and providing financial support to reduce their burden."
+ },
+ {
+  "id": "kccp",
+  "name": "Kisan Credit Card (Pashupalan)",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Loan",
+   "Livestock",
+   "Cooperative Society",
+   "Interest Rate",
+   "Farmer",
+   "Agriculture",
+   "KCCP"
+  ],
+  "rule": {
+   "occupation": "farmer",
+   "state": "madhya pradesh"
+  },
+  "state": "madhya pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/kccp",
+  "description": "The scheme aims to provide short-term working capital loans for livestock activities by offering eligible livestock farmers interest-subsidized loans for operational purposes through banks."
+ },
+ {
+  "id": "mamy-mp",
+  "name": "Mukhyamantri Asangathit Mazdoor Yojana",
+  "category": "Social welfare & Empowerment",
+  "topics": [
+   "Labour",
+   "Remuneration",
+   "Worker",
+   "Electricity",
+   "Transport",
+   "MAMY-MP"
+  ],
+  "rule": {
+   "occupation": "worker",
+   "state": "madhya pradesh"
+  },
+  "state": "madhya pradesh",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/mamy-mp",
+  "description": "The scheme aims to provide social and financial welfare benefits to unorganized sector workers. It offers increased remuneration, seasonal bonuses, electricity subsidies, and assistance such as e-rickshaws to registered unorganized laborers in Madhya Pradesh."
+ },
+ {
+  "id": "obdopmtig",
+  "name": "Organizing Block Demonstration on Polythene Mulch Technology in Groundnut",
+  "category": "Agriculture,Rural & Environment",
+  "topics": [
+   "Agriculture",
+   "Farmer",
+   "Block Demonstration",
+   "Polythene Mulch Technology",
+   "Groundnut",
+   "OBDOPMTIG"
+  ],
+  "rule": {
+   "occupation": "farmer",
+   "state": "tamil nadu"
+  },
+  "state": "tamil nadu",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/obdopmtig",
+  "description": "The scheme provides financial assistance to farmers for adopting polythene mulch technology in groundnut cultivation to improve productivity."
+ },
+ {
+  "id": "awardscholashipagriuk",
+  "name": "Award of Merit Scholarship for Agricultural Engineering Students (B.Tech 3rd/4th Year)",
+  "category": "Education & Learning",
+  "topics": [
+   "Agricultural Engineering",
+   "Scholarship",
+   "Student",
+   "Merit",
+   "AMSAES"
+  ],
+  "rule": {
+   "occupation": "student",
+   "state": "uttarakhand"
+  },
+  "state": "uttarakhand",
+  "level": "state",
+  "url": "https://www.myscheme.gov.in/schemes/awardscholashipagriuk",
+  "description": "The scheme aims to support meritorious students pursuing B.Tech in Agricultural Engineering in their 3rd and 4th years by providing scholarship of ₹2000/- per month for one year."
+ }
+]

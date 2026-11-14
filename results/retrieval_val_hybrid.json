@@ -1,0 +1,178 @@
+{
+ "method": "hybrid",
+ "split": "val",
+ "overall": {
+  "n": 1610,
+  "target@1": 0.299,
+  "target@3": 0.416,
+  "target@10": 0.547,
+  "any_rel@3": 0.58,
+  "MRR": 0.382
+ },
+ "by_language": {
+  "english": {
+   "n": 1095,
+   "target@1": 0.377,
+   "target@3": 0.52,
+   "target@10": 0.668,
+   "any_rel@3": 0.665,
+   "MRR": 0.474
+  },
+  "hinglish": {
+   "n": 35,
+   "target@1": 0.086,
+   "target@3": 0.086,
+   "target@10": 0.171,
+   "any_rel@3": 0.257,
+   "MRR": 0.109
+  },
+  "hindi": {
+   "n": 37,
+   "target@1": 0.216,
+   "target@3": 0.243,
+   "target@10": 0.297,
+   "any_rel@3": 0.432,
+   "MRR": 0.249
+  },
+  "bengali": {
+   "n": 34,
+   "target@1": 0.118,
+   "target@3": 0.206,
+   "target@10": 0.294,
+   "any_rel@3": 0.382,
+   "MRR": 0.179
+  },
+  "telugu": {
+   "n": 34,
+   "target@1": 0.176,
+   "target@3": 0.176,
+   "target@10": 0.294,
+   "any_rel@3": 0.412,
+   "MRR": 0.208
+  },
+  "marathi": {
+   "n": 31,
+   "target@1": 0.323,
+   "target@3": 0.355,
+   "target@10": 0.387,
+   "any_rel@3": 0.548,
+   "MRR": 0.354
+  },
+  "tamil": {
+   "n": 43,
+   "target@1": 0.116,
+   "target@3": 0.186,
+   "target@10": 0.395,
+   "any_rel@3": 0.442,
+   "MRR": 0.196
+  },
+  "urdu": {
+   "n": 42,
+   "target@1": 0.119,
+   "target@3": 0.214,
+   "target@10": 0.333,
+   "any_rel@3": 0.333,
+   "MRR": 0.188
+  },
+  "gujarati": {
+   "n": 31,
+   "target@1": 0.129,
+   "target@3": 0.194,
+   "target@10": 0.355,
+   "any_rel@3": 0.452,
+   "MRR": 0.189
+  },
+  "kannada": {
+   "n": 40,
+   "target@1": 0.1,
+   "target@3": 0.225,
+   "target@10": 0.25,
+   "any_rel@3": 0.5,
+   "MRR": 0.161
+  },
+  "odia": {
+   "n": 40,
+   "target@1": 0.125,
+   "target@3": 0.175,
+   "target@10": 0.275,
+   "any_rel@3": 0.375,
+   "MRR": 0.178
+  },
+  "malayalam": {
+   "n": 43,
+   "target@1": 0.047,
+   "target@3": 0.163,
+   "target@10": 0.302,
+   "any_rel@3": 0.419,
+   "MRR": 0.138
+  },
+  "punjabi": {
+   "n": 35,
+   "target@1": 0.171,
+   "target@3": 0.2,
+   "target@10": 0.286,
+   "any_rel@3": 0.4,
+   "MRR": 0.206
+  },
+  "assamese": {
+   "n": 40,
+   "target@1": 0.1,
+   "target@3": 0.175,
+   "target@10": 0.225,
+   "any_rel@3": 0.4,
+   "MRR": 0.148
+  },
+  "nepali": {
+   "n": 30,
+   "target@1": 0.1,
+   "target@3": 0.133,
+   "target@10": 0.2,
+   "any_rel@3": 0.233,
+   "MRR": 0.133
+  }
+ },
+ "by_noise": {
+  "clean": {
+   "n": 354,
+   "target@1": 0.339,
+   "target@3": 0.483,
+   "target@10": 0.593,
+   "any_rel@3": 0.661,
+   "MRR": 0.43
+  },
+  "heavy": {
+   "n": 671,
+   "target@1": 0.261,
+   "target@3": 0.359,
+   "target@10": 0.48,
+   "any_rel@3": 0.511,
+   "MRR": 0.334
+  },
+  "light": {
+   "n": 585,
+   "target@1": 0.32,
+   "target@3": 0.439,
+   "target@10": 0.597,
+   "any_rel@3": 0.61,
+   "MRR": 0.408
+  }
+ },
+ "by_row_type": {
+  "standard": {
+   "n": 1478,
+   "target@1": 0.248,
+   "target@3": 0.367,
+   "target@10": 0.509,
+   "any_rel@3": 0.547,
+   "MRR": 0.334
+  },
+  "named": {
+   "n": 132,
+   "target@1": 0.879,
+   "target@3": 0.955,
+   "target@10": 0.977,
+   "any_rel@3": 0.955,
+   "MRR": 0.922
+  }
+ }
+}
