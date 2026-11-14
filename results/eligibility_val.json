@@ -1,0 +1,118 @@
+{
+ "split": "val",
+ "queries": 1478,
+ "schemes_with_rules": 1082,
+ "A_full_profile": {
+  "eligible_count_matches": 1.0,
+  "same_category_list_matches": 1.0,
+  "precision": 1.0,
+  "recall": 1.0
+ },
+ "B_hide_one": {
+  "(nothing)": {
+   "yes": 65.87666666666667,
+   "unknown": 0.0,
+   "no": 1016.1233333333333,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  },
+  "state": {
+   "yes": 38.276666666666664,
+   "unknown": 265.71,
+   "no": 778.0133333333333,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  },
+  "age": {
+   "yes": 45.75666666666667,
+   "unknown": 35.97,
+   "no": 1000.2733333333333,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  },
+  "gender": {
+   "yes": 62.99666666666667,
+   "unknown": 5.46,
+   "no": 1013.5433333333333,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  },
+  "caste": {
+   "yes": 61.88666666666666,
+   "unknown": 11.183333333333334,
+   "no": 1008.93,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  },
+  "income": {
+   "yes": 61.6,
+   "unknown": 5.473333333333334,
+   "no": 1014.9266666666666,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  },
+  "occupation": {
+   "yes": 23.153333333333332,
+   "unknown": 114.23333333333333,
+   "no": 944.6133333333333,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  },
+  "disability": {
+   "yes": 65.09,
+   "unknown": 8.61,
+   "no": 1008.3,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  },
+  "bpl": {
+   "yes": 65.46333333333334,
+   "unknown": 1.8133333333333332,
+   "no": 1014.7233333333334,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  },
+  "residence": {
+   "yes": 64.46666666666667,
+   "unknown": 2.7333333333333334,
+   "no": 1014.8,
+   "truly_eligible_kept": 1.0,
+   "wrong_yes": 0
+  }
+ },
+ "C_questions": {
+  "0": {
+   "yes": 0.0,
+   "unknown": 196.09666666666666,
+   "no": 885.9033333333333
+  },
+  "1": {
+   "yes": 36.61333333333334,
+   "unknown": 73.25666666666666,
+   "no": 972.13
+  },
+  "2": {
+   "yes": 53.67666666666667,
+   "unknown": 35.913333333333334,
+   "no": 992.41
+  },
+  "3": {
+   "yes": 58.233333333333334,
+   "unknown": 22.356666666666666,
+   "no": 1001.41
+  },
+  "4": {
+   "yes": 60.81,
+   "unknown": 13.553333333333333,
+   "no": 1007.6366666666667
+  },
+  "5": {
+   "yes": 62.803333333333335,
+   "unknown": 7.623333333333333,
+   "no": 1011.5733333333334
+  }
+ },
+ "C_first_question": {
+  "occupation": 300
+ }
+}
