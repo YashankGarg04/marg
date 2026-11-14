@@ -9,7 +9,8 @@ Dense needs:  pip install sentence-transformers
               (first run downloads BAAI/bge-m3, ~2.3 GB; use a GPU such as Colab/Kaggle if you can,
                on CPU it can take 30-60 minutes. Embeddings are cached in data/cache/.)
 
-Writes: results/retrieval_<split>_<method>.json  and prints a summary table.
+Writes: results/retrieval_<split>_<method>[_<tag>].json  and prints a summary table.
+Use --model <folder> --tag ft to score your fine-tuned model without overwriting the baselines.
 
 How it is scored
   * The search index holds ALL schemes (every card), so the system has to find the needle
@@ -151,6 +152,8 @@ def main():
     ap.add_argument("--model", default="BAAI/bge-m3")
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--limit", type=int, default=0, help="debug: only first N queries")
+    ap.add_argument("--tag", default="",
+                    help="suffix for the result files, e.g. 'ft' -> retrieval_val_hybrid_ft.json")
     args = ap.parse_args()
     data = Path(args.data_dir)
     out = Path(args.out_dir)
@@ -186,8 +189,9 @@ def main():
                   "by_language": summarize(per, "language"),
                   "by_noise": summarize(per, "noise_level"),
                   "by_row_type": summarize(per, "row_type")}
-        json.dump(result, open(out / f"retrieval_{args.split}_{m}.json", "w", encoding="utf-8"),
-                  ensure_ascii=False, indent=1)
+        suffix = f"_{args.tag}" if args.tag else ""
+        json.dump(result, open(out / f"retrieval_{args.split}_{m}{suffix}.json", "w",
+                               encoding="utf-8"), ensure_ascii=False, indent=1)
         print(f"\n===== {m.upper()}  ({args.split}) =====")
         print("overall   ", result["overall"])
         for title, key in (("language", "by_language"), ("noise", "by_noise"),
