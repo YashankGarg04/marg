@@ -30,7 +30,7 @@ from pathlib import Path
 
 import numpy as np
 
-KS = (1, 3, 10)
+KS = (1, 3, 10, 30)
 _SPLIT_RE = re.compile(r"[\s\.,;:!?()\[\]{}\"'“”‘’/\\|\-–—_@#%&*+=<>~`^]+")
 
 
@@ -208,7 +208,7 @@ def main():
             print(f"-- by {title}")
             for g, v in sorted(result[key].items()):
                 print(f"  {g:10} n={v['n']:4d}  target@1={v['target@1']:.3f}  "
-                      f"@3={v['target@3']:.3f}  @10={v['target@10']:.3f}  "
+                      f"@3={v['target@3']:.3f}  @10={v['target@10']:.3f}  @30={v['target@30']:.3f}  "
                       f"any_rel@3={v['any_rel@3']:.3f}  MRR={v['MRR']:.3f}")
 
 

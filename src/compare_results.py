@@ -25,7 +25,7 @@ def row(label, getter):
 
 
 print(f"{'':22}" + "".join(f"{n:>{w}}" for n in names))
-for metric in ("target@1", "target@3", "target@10", "any_rel@3", "MRR"):
+for metric in ("target@1", "target@3", "target@10", "target@30", "any_rel@3", "MRR"):
     row(metric + " (overall)", lambda r, m=metric: r["overall"][m])
 print("\ntarget@3 by group")
 groups = []
