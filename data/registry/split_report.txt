@@ -14,4 +14,4 @@ val row types: {'standard': 1478, 'named': 132, 'vague': 153, 'offtopic': 32}
 test languages: {'english': 1241, 'hinglish': 35, 'hindi': 38, 'bengali': 43, 'telugu': 38, 'marathi': 38, 'tamil': 34, 'urdu': 45, 'gujarati': 42, 'kannada': 39, 'odia': 42, 'malayalam': 43, 'punjabi': 39, 'assamese': 45, 'nepali': 36}
 test row types: {'offtopic': 33, 'standard': 1484, 'named': 140, 'vague': 141}
 
-scheme_split_v1.json sha256[:16] = 86e37f2b82764569  (note it down; it must never change)
+scheme_split_v1.json content-sha256[:16] = ae21571e152abac9  (note it down; it must never change)

@@ -157,8 +157,8 @@ def main():
         print("Created a new frozen split.")
     for slug in reg:
         reg[slug]["split"] = split[slug]
-    json.dump(dict(sorted(split.items())), open(split_path, "w", encoding="utf-8"),
-              ensure_ascii=False, indent=0)
+    with open(split_path, "w", encoding="utf-8", newline="\n") as f:   # LF on every OS
+        json.dump(dict(sorted(split.items())), f, ensure_ascii=False, indent=0)
 
     # ---- 4. assign every query to a split --------------------------------
     by_split = defaultdict(list)
@@ -207,9 +207,11 @@ def main():
         lines.append(f"{name} languages: {dict(langs)}")
         types = Counter(q["row_type"] for q in by_split[name])
         lines.append(f"{name} row types: {dict(types)}")
-    sha = hashlib.sha256(split_path.read_bytes()).hexdigest()[:16]
+    # hash of the CONTENT (not the bytes), so it is identical on Windows, Mac and Linux
+    canon = json.dumps(dict(sorted(split.items())), ensure_ascii=False, separators=(",", ":"))
+    sha = hashlib.sha256(canon.encode("utf-8")).hexdigest()[:16]
     lines.append("")
-    lines.append(f"scheme_split_v1.json sha256[:16] = {sha}  (note it down; it must never change)")
+    lines.append(f"scheme_split_v1.json content-sha256[:16] = {sha}  (note it down; it must never change)")
     report = "\n".join(lines)
     (out_dir / "registry" / "split_report.txt").write_text(report, encoding="utf-8")
     print(report)
