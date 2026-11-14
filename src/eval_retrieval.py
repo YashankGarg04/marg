@@ -71,19 +71,19 @@ class BM25:
 
 # -------------------------------------------------------------------- dense
 def dense_scores(cards, queries, cache_dir, model_name, batch):
-    try:
-        from sentence_transformers import SentenceTransformer
-    except ImportError:
-        raise SystemExit("Dense search needs:  pip install sentence-transformers")
     cache_dir.mkdir(parents=True, exist_ok=True)
-    tag = model_name.split("/")[-1]
+    tag = model_name.replace("\\", "/").rstrip("/").split("/")[-1]
     model = None
 
     def encode(texts, name, max_len):
         nonlocal model
         path = cache_dir / f"{tag}_{name}_{len(texts)}.npy"
-        if path.exists():
+        if path.exists():                                # already encoded: no model needed
             return np.load(path)
+        try:
+            from sentence_transformers import SentenceTransformer
+        except ImportError:
+            raise SystemExit("Dense search needs:  pip install sentence-transformers")
         if model is None:
             model = SentenceTransformer(model_name)
         model.max_seq_length = max_len
@@ -99,14 +99,15 @@ def dense_scores(cards, queries, cache_dir, model_name, batch):
 
 
 # -------------------------------------------------------------------- metrics
-def rrf(rank_lists, k=60):
-    """Reciprocal rank fusion of several score arrays -> one score array."""
+def rrf(rank_lists, weights=None, k=60):
+    """(Weighted) reciprocal rank fusion of several score arrays -> one score array."""
+    weights = weights or [1.0] * len(rank_lists)
     fused = np.zeros_like(rank_lists[0])
-    for s in rank_lists:
+    for s, w in zip(rank_lists, weights):
         order = np.argsort(-s)
         r = np.empty_like(order)
         r[order] = np.arange(len(order))
-        fused += 1.0 / (k + r + 1)
+        fused += w / (k + r + 1)
     return fused
 
 
@@ -152,6 +153,9 @@ def main():
     ap.add_argument("--model", default="BAAI/bge-m3")
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--limit", type=int, default=0, help="debug: only first N queries")
+    ap.add_argument("--bm25-weights", nargs="+", type=float, default=[1.0],
+                    help="hybrid only: weight of BM25 against dense (1 = equal). "
+                         "Try:  --bm25-weights 1 0.5 0.25 0.1")
     ap.add_argument("--tag", default="",
                     help="suffix for the result files, e.g. 'ft' -> retrieval_val_hybrid_ft.json")
     args = ap.parse_args()
@@ -177,13 +181,18 @@ def main():
         dense = dense_scores(cards, queries, data / "cache" / args.split,
                              args.model, args.batch)
 
+    jobs = []
     for m in args.methods:
         if m == "bm25":
-            rows = bm
+            jobs.append(("bm25", bm))
         elif m == "dense":
-            rows = dense
+            jobs.append(("dense", dense))
         else:
-            rows = np.stack([rrf([bm[i], dense[i]]) for i in range(len(queries))])
+            for w in args.bm25_weights:
+                label = "hybrid" if w == 1.0 else f"hybrid_w{w:g}"
+                jobs.append((label, np.stack([rrf([bm[i], dense[i]], [w, 1.0])
+                                              for i in range(len(queries))])))
+    for m, rows in jobs:
         per = evaluate(rows, queries, slug_index, slugs)
         result = {"method": m, "split": args.split, "overall": summarize(per)["ALL"],
                   "by_language": summarize(per, "language"),
