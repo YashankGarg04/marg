@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from eligibility import NO, YES, scheme_status  # noqa: E402
-from pipeline import Marg  # noqa: E402
+from pipeline import DenseSearcher, Marg, load_rules  # noqa: E402
 
 
 def main():
@@ -27,14 +27,22 @@ def main():
     ap.add_argument("--split", default="val", choices=["train", "val", "test"])
     ap.add_argument("--n", type=int, default=600)
     ap.add_argument("--language", default="")
+    ap.add_argument("--mode", default="benchmark", choices=["benchmark", "real"],
+                    help="real = also add caste/gender/... conditions the dataset's hand-made rules forgot")
+    ap.add_argument("--model", default="", help="folder of the fine-tuned model -> dense+BM25 search (needs card embeddings)")
+    ap.add_argument("--tag", default="")
     args = ap.parse_args()
-    marg = Marg()
+    searcher = DenseSearcher(args.model) if args.model else None
+    marg = Marg(searcher=searcher, mode=args.mode)
+    truth_rules, _ = load_rules(mode="benchmark")          # scores are always judged by the dataset's rules
     rows = [json.loads(l) for l in open(f"data/splits/{args.split}.jsonl", encoding="utf-8")]
     rows = [r for r in rows if r["row_type"] in ("standard", "named") and isinstance(r["true_profile"], dict)
             and r["target_slug"] in marg.names and (not args.language or r["language"] == args.language)]
     random.Random(0).shuffle(rows)
     rows = rows[:args.n]
-    print(f"{len(rows)} queries ({args.split})")
+    if searcher:
+        searcher.prepare([" ".join(r["turns"]) if r["n_turns"] > 1 else r["query"] for r in rows])
+    print(f"{len(rows)} queries ({args.split}), rules: {args.mode}, search: {'fine-tuned dense + BM25' if args.model else 'BM25'}")
     gold = marg.known
     modes = ["search only", "+ query details", "+ form + query"]
     stat = {m: dict(t3=0, anyel=0, shown=0, known=0, bad=0, drop=0, droppable=0, yes=0) for m in modes}
@@ -53,9 +61,9 @@ def main():
             known_shown = [x for x in shown if x in gold]
             s["shown"] += len(shown)
             s["known"] += len(known_shown)
-            s["bad"] += sum(scheme_status(marg.rules[x], truth) == NO for x in known_shown)
-            s["anyel"] += any(scheme_status(marg.rules.get(x), truth) == YES for x in shown)
-            s["yes"] += sum(scheme_status(marg.rules.get(x), truth) == YES for x in shown)
+            s["bad"] += sum(scheme_status(truth_rules[x], truth) == NO for x in known_shown)
+            s["anyel"] += any(scheme_status(truth_rules.get(x), truth) == YES for x in shown)
+            s["yes"] += sum(scheme_status(truth_rules.get(x), truth) == YES for x in shown)
             if mode != "search only":                              # a truly eligible scheme removed from the candidates?
                 prof = None
                 from eligibility import ProfileManager
@@ -66,7 +74,7 @@ def main():
                 pm.update(read_query(text), turn=1)
                 prof = pm.current()
                 for x in cand:
-                    if x in gold and scheme_status(marg.rules[x], truth) == YES:
+                    if x in gold and scheme_status(truth_rules[x], truth) == YES:
                         s["droppable"] += 1
                         s["drop"] += scheme_status(marg.rules[x], prof) == NO
     n = len(rows)
@@ -81,7 +89,8 @@ def main():
         wd = f"{row['wrongly_dropped']:.1%}" if row["wrongly_dropped"] is not None else "-"
         print(f"{m:20}{row['target@3']:10.3f}{row['any_eligible@3']:16.3f}{row['ineligible_share']:18.1%}{wd:>17}")
     Path("results").mkdir(exist_ok=True)
-    json.dump(out, open(f"results/pipeline_{args.split}.json", "w"), indent=1)
+    tag = "_".join(t for t in (args.mode if args.mode != "benchmark" else "", args.tag) if t)
+    json.dump(out, open(f"results/pipeline_{args.split}{'_' + tag if tag else ''}.json", "w"), indent=1)
 
 
 if __name__ == "__main__":

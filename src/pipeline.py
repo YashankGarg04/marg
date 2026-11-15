@@ -21,8 +21,15 @@ from eval_retrieval import BM25, read_jsonl, tokenize  # noqa: E402
 from read_query import read_query  # noqa: E402
 
 
-def load_rules(data="data"):
-    """slug -> rule. Hand-made rules (1,082) win; the rest come from the extractor + the scheme's own state."""
+SAFE_EXTRA = ("castes", "gender", "disability", "bpl")        # extractor fields precise enough to add to a hand-made rule
+
+
+def load_rules(data="data", mode="benchmark"):
+    """slug -> rule.
+    benchmark: the dataset's 1,082 hand-made rules win as they are (this is what the scores are measured against).
+    real     : same, plus caste / gender / disability / BPL conditions the extractor found that the hand-made rule lacks
+               (e.g. an ST-only scheme whose rule forgot the caste).
+    The other ~3,500 schemes always come from the extractor + the scheme's own state."""
     data = Path(data)
     known = {s["id"]: s["rule"] for s in json.load(open(data / "rag_schemes.json", encoding="utf-8"))}
     extracted = json.load(open(data / "rules_extracted.json", encoding="utf-8")) if (data / "rules_extracted.json").exists() else {}
@@ -31,7 +38,12 @@ def load_rules(data="data"):
         for r in csv.DictReader(f):
             if r["level"] == "state" and r["state"] and r["state"] != "All":
                 state[r["slug"]] = r["state"].lower()
-    rules = dict(known)
+    rules = {k: dict(v) for k, v in known.items()}
+    if mode == "real":
+        for slug in known:
+            for k in SAFE_EXTRA:
+                if k in extracted.get(slug, {}) and k not in rules[slug]:
+                    rules[slug][k] = extracted[slug][k]
     for slug, rule in extracted.items():
         if slug not in rules:
             rules[slug] = dict(rule, **({"state": state[slug]} if slug in state else {}))
@@ -51,9 +63,47 @@ class Searcher:
         return [self.slugs[i] for i in order]
 
 
+class DenseSearcher:
+    """Fine-tuned BGE-M3 + a little BM25 (weighted rank fusion, BM25 weight 0.1 = the best setting we measured).
+    Card embeddings are read from data/cache (made by eval_retrieval.py on Colab); queries are encoded on the fly."""
+
+    def __init__(self, model_dir, data="data", bm25_weight=0.1, emb_path=None):
+        import numpy as np
+        from sentence_transformers import SentenceTransformer
+        self.np = np
+        self.base = Searcher(data)
+        self.cards, self.slugs = self.base.cards, self.base.slugs
+        tag = Path(model_dir).name
+        paths = [Path(emb_path)] if emb_path else sorted(Path(data, "cache").glob(f"*/{tag}_cards_{len(self.cards)}.npy"))
+        if not paths:
+            raise SystemExit(f"No card embeddings for {tag} in {data}/cache. Run on Colab first:\n"
+                             f"  python src/eval_retrieval.py --methods dense --model {model_dir} --tag ft")
+        self.cards_emb = np.load(paths[0])
+        self.model = SentenceTransformer(str(model_dir))
+        self.model.max_seq_length = 128
+        self.w = bm25_weight
+        self.cache = {}
+
+    def prepare(self, texts, batch=32):
+        todo = [t for t in dict.fromkeys(texts) if t not in self.cache]
+        if todo:
+            emb = self.model.encode(todo, batch_size=batch, normalize_embeddings=True, show_progress_bar=True)
+            self.cache.update(zip(todo, emb))
+
+    def top(self, text, k=30):
+        from eval_retrieval import rrf
+        np = self.np
+        self.prepare([text])
+        dense = self.cards_emb @ self.cache[text]
+        bm = self.base.bm25.scores(tokenize(text))
+        fused = rrf([bm, dense], [self.w, 1.0])
+        return [self.slugs[i] for i in np.argsort(-fused)[:k]]
+
+
 class Marg:
-    def __init__(self, data="data", searcher=None):
-        self.rules, self.known = load_rules(data)
+    def __init__(self, data="data", searcher=None, mode="benchmark"):
+        self.mode = mode
+        self.rules, self.known = load_rules(data, mode)
         self.searcher = searcher or Searcher(data)
         self.names = {c["slug"]: c["name"] for c in self.searcher.cards}
 
