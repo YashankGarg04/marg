@@ -1,0 +1,13 @@
+gender=male: male man gender पुरुष aadmi purush مرد ಪುರುಷ പുരുഷനാണ് পুরুষ పురుషుడిని પુરુષ ପୁରୁଷ ਆਦਮੀ ஆண் পুৰুষ gndr aman expenses gnm anm maale ejan schme certification
+gender=female: female woman lady महिला mahila মহিলা મહિલા mahilaa خاتون এগৰাকী സ്ത്രീയാണ് ਔਰਤ ಮಹಿಳೆ fml మహిళను ମହିଳା பெண் girl child girls mahilanu aurat calf pure insemination
+residence=rural: village rural gaon கிராமத்தில் ಹಳ್ಳಿಯಲ್ಲಿದೆ ଗାଁରେ ഗ്രാമത്തിലാണ് vllg গ্রামে گاؤں గ్రామంలో गाउँमा ગામમાં गाँव गावात গাঁৱত ਪਿੰਡ westay edctn gramin bleong grihini pensioon energy major
+residence=urban: city urban town सहरमा شہر ਸ਼ਹਿਰ shehar શહેરમાં நகரத்தில் शहर നഗരത്തിലാണ് নগৰত শহরে నగరంలో ସହରରେ शहरात ನಗರದಲ್ಲಿದೆ adi department-hostels guides dravidar evam వ్యాపారవేత్త gunavatta biotechnology
+occupation=farmer: farmer farming kisan किसान কৃষক crop ખેડૂત ರೈತ seed farmers ଚାଷୀ விவசாயி ਕਿਸਾਨ കർഷകൻ frmr రైతు کسان seeds शेतकरी krishak frmng cultivation crops farm plantation
+occupation=student: student college studying विद्यार्थी students stdnt علم طالب ছাত্র छात्र மாணவர் ਵਿਦਿਆਰਥੀ ଛାତ୍ର વિદ્યાર્થી విద్యార్థి വിദ്യാർത്ഥി ವಿದ್ಯಾರ್ಥಿ ছাত্ৰ internship cllg crrntly chhaatr stdyng vidyaarthi learning
+occupation=worker: worker unorganised wage labourer wages labour कामगार தொழிலாளி തൊഴിലാളി मजदुर ಕಾರ್ಮಿಕ mazdoor wrkr مزدور শ্ৰমিক కూలీ ਮਜ਼ਦੂਰ મજૂર unrgnsd workers’ मज़दूर শ্রমিক cnstrctn ଶ୍ରମିକ spectacles
+occupation=entrepreneur: shop enterprise planning उद्यमी ਉੱਦਮੀ incentives उद्योजक സംരംഭകൻ nbcfdc ಉದ್ಯಮಿ ଉଦ୍ୟୋଗୀ aroma located park siidcul kashipur bsnss వ్యాపారవేత్త தொழில்முனைவோர் ઉદ્યોગસાહસિક setting উদ্যোক্তা plnnng ऋण udyogee
+occupation=unemployed: unemployed jobless बेरोजगार বেকার بے berozgar ବେକାର बेरोज़गार berojagaar
+occupation=vendor: street run stall vendor cart sell ವ್ಯಾಪಾರಿ
+disability=True: disability abled differently pwd dsblty अपंगत्व ಅಂಗವೈಕಲ್ಯ மாற்றுத்திறன் ମୋର প্ৰতিবন্ধকতা मलाई معذور వైకల్యం ଦିବ୍ୟାଙ୍ଗତା अपाङ्गता disabled विकलांगता ਅਪੰਗਤਾ ഭിന്നശേഷിയുണ്ട് প্রতিবন্ধকতা needs voluntary ​​disabled disabilities pratibandhakataa
+bpl=True: bpl card below line poverty hold कार्ड paas mere ਕੋਲ मेरे पास அட்டை پاس எங்களிடம் ഉണ്ട് കാർഡ് ਕਾਰਡ کارڈ ഞങ്ങൾക്ക് కార్డు हामीसँग మాకు आमच्याकडे અમારી
+lakh words: lakh lskh लाख laakh লাখ lakh। లక్ష laksha lakkh lah லட்சம் latcham لاکھ લાખ lahk ಲಕ್ಷ ଲକ୍ଷ laksh ലക്ഷം lakshan ਲੱਖ
