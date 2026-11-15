@@ -29,6 +29,8 @@ def main():
     ap.add_argument("--language", default="")
     ap.add_argument("--mode", default="benchmark", choices=["benchmark", "real"],
                     help="real = also add caste/gender/... conditions the dataset's hand-made rules forgot")
+    ap.add_argument("--order", default="status", choices=["status", "search"],
+                    help="status = confirmed matches first; search = keep the search order, only remove ruled-out schemes")
     ap.add_argument("--model", default="", help="folder of the fine-tuned model -> dense+BM25 search (needs card embeddings)")
     ap.add_argument("--tag", default="")
     args = ap.parse_args()
@@ -42,7 +44,7 @@ def main():
     rows = rows[:args.n]
     if searcher:
         searcher.prepare([" ".join(r["turns"]) if r["n_turns"] > 1 else r["query"] for r in rows])
-    print(f"{len(rows)} queries ({args.split}), rules: {args.mode}, search: {'fine-tuned dense + BM25' if args.model else 'BM25'}")
+    print(f"{len(rows)} queries ({args.split}), rules: {args.mode}, order: {args.order}, search: {'fine-tuned dense + BM25' if args.model else 'BM25'}")
     gold = marg.known
     modes = ["search only", "+ query details", "+ form + query"]
     stat = {m: dict(t3=0, anyel=0, shown=0, known=0, bad=0, drop=0, droppable=0, yes=0) for m in modes}
@@ -55,7 +57,7 @@ def main():
                 shown = cand[:3]
             else:
                 form = truth if mode == "+ form + query" else None
-                shown = [x["slug"] for x in marg.answer(text, form=form)["results"]]
+                shown = [x["slug"] for x in marg.answer(text, form=form, order=args.order)["results"]]
             s = stat[mode]
             s["t3"] += r["target_slug"] in shown
             known_shown = [x for x in shown if x in gold]
@@ -89,7 +91,7 @@ def main():
         wd = f"{row['wrongly_dropped']:.1%}" if row["wrongly_dropped"] is not None else "-"
         print(f"{m:20}{row['target@3']:10.3f}{row['any_eligible@3']:16.3f}{row['ineligible_share']:18.1%}{wd:>17}")
     Path("results").mkdir(exist_ok=True)
-    tag = "_".join(t for t in (args.mode if args.mode != "benchmark" else "", args.tag) if t)
+    tag = "_".join(t for t in (args.mode if args.mode != "benchmark" else "", args.order if args.order != "status" else "", args.tag) if t)
     json.dump(out, open(f"results/pipeline_{args.split}{'_' + tag if tag else ''}.json", "w"), indent=1)
 
 

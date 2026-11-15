@@ -107,7 +107,7 @@ class Marg:
         self.searcher = searcher or Searcher(data)
         self.names = {c["slug"]: c["name"] for c in self.searcher.cards}
 
-    def answer(self, message, form=None, k_search=30, k_show=3, profile=None):
+    def answer(self, message, form=None, k_search=30, k_show=3, profile=None, order="status"):
         """message: text or list of turns. form: dict of defaults. Returns profile, results, questions."""
         pm = profile or ProfileManager()
         if form:
@@ -124,7 +124,11 @@ class Marg:
                 continue
             key = {YES: "yes", MAYBE: "unknown", UNVERIFIED: "unverified"}[st]
             out[key].append(slug)
-        ranked = out["yes"] + out["unknown"] + out["unverified"]
+        if order == "search":      # keep the search order, only remove schemes the person is ruled out of
+            keep = set(out["yes"] + out["unknown"] + out["unverified"])
+            ranked = [x for x in cand if x in keep]
+        else:                      # confirmed matches first, then ones that need a detail, then unchecked
+            ranked = out["yes"] + out["unknown"] + out["unverified"]
         results = []
         for slug in ranked[:k_show]:
             rule = self.rules.get(slug)
