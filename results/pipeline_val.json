@@ -1,0 +1,20 @@
+{
+ "search only": {
+  "target@3": 0.3416666666666667,
+  "any_eligible@3": 0.66,
+  "ineligible_share": 0.560546875,
+  "wrongly_dropped": null
+ },
+ "+ query details": {
+  "target@3": 0.43833333333333335,
+  "any_eligible@3": 0.9733333333333334,
+  "ineligible_share": 0.05952380952380952,
+  "wrongly_dropped": 0.0059121621621621625
+ },
+ "+ form + query": {
+  "target@3": 0.45,
+  "any_eligible@3": 0.975,
+  "ineligible_share": 0.007099391480730223,
+  "wrongly_dropped": 0.005489864864864865
+ }
+}

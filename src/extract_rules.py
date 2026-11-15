@@ -54,9 +54,10 @@ def positive_part(low):
     return " ".join(p for p in parts if not re.search(r"\bnot\b", p))
 
 
-def extract(text, tags=()):
+def extract(text, tags=(), name=""):
     t = clean(text)
     low = t.lower()
+    nm = clean(name).lower()
     pos = positive_part(low)
     disj = bool(DISJOINT.search(low))
     rule = {}
@@ -103,10 +104,19 @@ def extract(text, tags=()):
     if re.search(r"\bobc\b|other backward|backward class", pos): castes.append("obc")
     if castes and not disj and not RELAX.search(low) and re.search(r"belong|categor|caste|tribe|tribal|community|\bsc\b|\bst\b|\bobc\b", pos):
         rule["castes"] = sorted(set(castes))
+    elif not castes and not disj:                           # the scheme's own title says who it is for
+        nc = []
+        if re.search(r"scheduled castes?\b|\bsc\b", nm): nc.append("sc")
+        if re.search(r"scheduled tribes?\b|\bst\b|\btribal", nm): nc.append("st")
+        if re.search(r"\bobc\b|backward class", nm): nc.append("obc")
+        if nc:
+            rule["castes"] = sorted(set(nc))
 
     # ---- gender
     female = re.search(r"\b(women|woman|female|girl|girls|ladies|lady)\b", low) or \
         re.search(r"(?:must|should) be a widow|\bunmarried women\b", low)
+    if not female and re.search(r"\b(women|woman|girl|girls|female|mahila|kanya|ladli|beti|widow)\b", nm) and not disj:
+        female = True
     if female and not disj and not RELAX.search(low) and not re.search(r"\bmales?\b|\bboy", low):
         rule["gender"] = "female"
 
@@ -151,7 +161,7 @@ def main():
         if l.strip():
             r = json.loads(l)
             recs[r["slug"]] = r
-    out = {s: extract(eligibility_text(r), r["en"]["basicDetails"].get("tags") or []) for s, r in recs.items()}
+    out = {s: extract(eligibility_text(r), r["en"]["basicDetails"].get("tags") or [], r["en"]["basicDetails"].get("schemeName") or "") for s, r in recs.items()}
 
     if args.eval:
         keys = ["min_age", "max_age", "max_income", "castes", "gender", "disability", "bpl", "residence", "occupation"]

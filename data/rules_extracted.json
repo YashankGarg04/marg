@@ -184,6 +184,9 @@
  },
  "ssebctv": {
   "max_income": 600000,
+  "castes": [
+   "obc"
+  ],
   "bpl": true,
   "occupation": "student"
  },
@@ -225,6 +228,9 @@
  },
  "ssyebc": {
   "max_income": 600000,
+  "castes": [
+   "obc"
+  ],
   "gender": "female",
   "bpl": true,
   "occupation": "student"
@@ -285,10 +291,14 @@
   "castes": [
    "obc"
   ],
+  "gender": "female",
   "occupation": "student"
  },
  "dacssiselosobcebc": {
   "max_income": 800000,
+  "castes": [
+   "obc"
+  ],
   "occupation": "student"
  },
  "siip": {},
@@ -421,6 +431,9 @@
  },
  "sfaoeao": {},
  "ppscholarshipuk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -450,7 +463,9 @@
   "max_income": 500000,
   "occupation": "student"
  },
- "dbgmig": {},
+ "dbgmig": {
+  "gender": "female"
+ },
  "nsjy": {},
  "mmsy-uk": {
   "min_age": 18,
@@ -468,6 +483,9 @@
   "occupation": "worker"
  },
  "mukhopadhyaystudentfunduk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -1096,6 +1114,9 @@
  "aktinf": {},
  "csspremsobcsi": {
   "max_income": 250000,
+  "castes": [
+   "obc"
+  ],
   "disability": true,
   "occupation": "student"
  },
@@ -1425,6 +1446,7 @@
  "ignwpsmp": {
   "min_age": 40,
   "max_age": 79,
+  "gender": "female",
   "bpl": true
  },
  "mhh": {
@@ -1612,7 +1634,9 @@
   "max_income": 300000,
   "disability": true
  },
- "apwesmc": {},
+ "apwesmc": {
+  "gender": "female"
+ },
  "apdesmc": {
   "disability": true
  },
@@ -1790,6 +1814,9 @@
   "gender": "female"
  },
  "pmsfbcs": {
+  "castes": [
+   "obc"
+  ],
   "occupation": "student"
  },
  "jscpmss": {
@@ -1807,6 +1834,9 @@
   ]
  },
  "bcfsss": {
+  "castes": [
+   "obc"
+  ],
   "occupation": "student"
  },
  "iwp-andhra": {
@@ -1892,6 +1922,9 @@
   "occupation": "student"
  },
  "kdscs": {
+  "castes": [
+   "sc"
+  ],
   "gender": "female",
   "occupation": "student"
  },
@@ -1953,6 +1986,9 @@
   "occupation": "student"
  },
  "tmtsbg-pme": {
+  "castes": [
+   "st"
+  ],
   "occupation": "student"
  },
  "pks": {
@@ -2074,6 +2110,9 @@
  },
  "pomis": {},
  "pre-sc": {
+  "castes": [
+   "sc"
+  ],
   "occupation": "student"
  },
  "tls-nmdfc": {
@@ -2159,6 +2198,7 @@
   "occupation": "student"
  },
  "admptpfdap": {
+  "gender": "female",
   "disability": true
  },
  "adow": {
@@ -2246,6 +2286,10 @@
   "occupation": "entrepreneur"
  },
  "agr2fmsfotscst": {
+  "castes": [
+   "sc",
+   "st"
+  ],
   "occupation": "farmer"
  },
  "agr3fmsstf": {
@@ -2255,6 +2299,9 @@
   "occupation": "farmer"
  },
  "agr4fmsscf": {
+  "castes": [
+   "sc"
+  ],
   "occupation": "farmer"
  },
  "agr50s-apt": {
@@ -2327,6 +2374,9 @@
   "max_income": 4000
  },
  "anmukhopadhyayuk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -2420,6 +2470,9 @@
   "occupation": "worker"
  },
  "asianagrifellowshipuk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -2881,7 +2934,11 @@
  },
  "dfbsscsts": {},
  "dfhsscoebc": {
-  "max_income": 24000
+  "max_income": 24000,
+  "castes": [
+   "obc",
+   "sc"
+  ]
  },
  "dfsbnsfdc": {
   "max_income": 300000,
@@ -2965,6 +3022,9 @@
   ]
  },
  "drvnmathuruk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -3102,6 +3162,9 @@
   "occupation": "farmer"
  },
  "ehstgs": {
+  "castes": [
+   "st"
+  ],
   "gender": "female",
   "occupation": "student"
  },
@@ -3519,7 +3582,9 @@
  "hfta-giapsca": {
   "min_age": 60
  },
- "hhjmhhst": {},
+ "hhjmhhst": {
+  "gender": "female"
+ },
  "hiai": {},
  "hliss-glwb": {
   "min_age": 15,
@@ -3800,6 +3865,9 @@
   "occupation": "farmer"
  },
  "kcsfellowshipuk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -4135,6 +4203,7 @@
   ]
  },
  "mkapy": {
+  "gender": "female",
   "bpl": true
  },
  "mkay": {
@@ -4249,6 +4318,9 @@
   "occupation": "student"
  },
  "monsantoscholarshipuk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -5065,6 +5137,9 @@
   "occupation": "student"
  },
  "sasbma": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -5172,7 +5247,10 @@
  },
  "sdsscp": {
   "min_age": 18,
-  "max_income": 24000
+  "max_income": 24000,
+  "castes": [
+   "sc"
+  ]
  },
  "sdt-90drsdtp": {
   "min_age": 18,
@@ -5345,6 +5423,9 @@
   "occupation": "worker"
  },
  "skmscholarshipbscuk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -5794,6 +5875,7 @@
   "max_income": 300000
  },
  "tshmcy": {
+  "gender": "female",
   "occupation": [
    "student",
    "worker"
@@ -5817,6 +5899,9 @@
   "occupation": "farmer"
  },
  "uaebcsoe": {
+  "castes": [
+   "obc"
+  ],
   "bpl": true,
   "occupation": "student"
  },
@@ -5843,6 +5928,9 @@
   "gender": "female"
  },
  "umaguptafellowshipuk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -5903,6 +5991,9 @@
   "gender": "female"
  },
  "vpmawardsuk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -6032,7 +6123,8 @@
  },
  "wpup": {
   "min_age": 18,
-  "max_income": 200000
+  "max_income": 200000,
+  "gender": "female"
  },
  "wwhh": {
   "gender": "female"
@@ -6546,7 +6638,8 @@
   "bpl": true
  },
  "aniwps": {
-  "max_income": 4000
+  "max_income": 4000,
+  "gender": "female"
  },
  "anky": {
   "gender": "female",
@@ -6649,6 +6742,10 @@
   "max_income": 200000
  },
  "apnfuscst": {
+  "castes": [
+   "sc",
+   "st"
+  ],
   "occupation": "farmer"
  },
  "apspmss": {
@@ -6662,7 +6759,9 @@
    "st"
   ]
  },
- "apwesmnc": {},
+ "apwesmnc": {
+  "gender": "female"
+ },
  "apy": {},
  "apy-jbocwwb": {
   "occupation": "worker"
@@ -7137,6 +7236,9 @@
   "occupation": "student"
  },
  "bimlaranimemorialawarduk": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -7553,9 +7655,15 @@
  },
  "cdccuk": {},
  "cdgsca": {
+  "castes": [
+   "sc"
+  ],
   "occupation": "worker"
  },
  "cdgsta": {
+  "castes": [
+   "st"
+  ],
   "occupation": "worker"
  },
  "cdpnerqucsecoc": {
@@ -7638,6 +7746,7 @@
   "castes": [
    "obc"
   ],
+  "gender": "female",
   "disability": true,
   "occupation": "student"
  },
@@ -8025,6 +8134,7 @@
   "castes": [
    "obc"
   ],
+  "gender": "female",
   "occupation": "student"
  },
  "css-nos-st": {
@@ -8119,7 +8229,9 @@
  "cvy-emps": {
   "occupation": "entrepreneur"
  },
- "cvy-sumcy": {},
+ "cvy-sumcy": {
+  "gender": "female"
+ },
  "cwibhr": {},
  "cwsiass": {
   "occupation": "entrepreneur"
@@ -9123,6 +9235,10 @@
  },
  "faimcescstc": {
   "max_income": 100000,
+  "castes": [
+   "sc",
+   "st"
+  ],
   "occupation": [
    "worker",
    "entrepreneur"
@@ -9387,6 +9503,7 @@
   "disability": true
  },
  "fawddwhlwb": {
+  "gender": "female",
   "occupation": "worker"
  },
  "fawdsddaw": {
@@ -9408,6 +9525,7 @@
   "max_income": 200000
  },
  "fawwrcw": {
+  "gender": "female",
   "occupation": "worker"
  },
  "fawwwwmwmhlwb": {
@@ -9699,6 +9817,7 @@
  "fwpspbocwwb": {
   "min_age": 18,
   "max_age": 60,
+  "gender": "female",
   "occupation": "worker"
  },
  "fwsscstsphe": {
@@ -9844,7 +9963,9 @@
  },
  "giaiacinpsc": {},
  "giango": {},
- "giaspfamm": {},
+ "giaspfamm": {
+  "gender": "female"
+ },
  "giaspfammwshg": {
   "gender": "female"
  },
@@ -10048,6 +10169,7 @@
  },
  "gsfmoddw": {
   "max_income": 48000,
+  "gender": "female",
   "bpl": true
  },
  "gsfmssg": {
@@ -10585,6 +10707,9 @@
   "occupation": "farmer"
  },
  "ifsifnta": {
+  "castes": [
+   "st"
+  ],
   "occupation": [
    "farmer",
    "worker"
@@ -10723,6 +10848,7 @@
  },
  "ignwps-sikkim": {
   "min_age": 21,
+  "gender": "female",
   "bpl": true
  },
  "ignwpsb": {
@@ -10792,7 +10918,10 @@
  },
  "iibbe": {},
  "iicmscc": {
-  "max_income": 200000
+  "max_income": 200000,
+  "castes": [
+   "sc"
+  ]
  },
  "iirps": {},
  "iitpes": {
@@ -10997,7 +11126,11 @@
   ],
   "occupation": "farmer"
  },
- "isaltlcss": {},
+ "isaltlcss": {
+  "castes": [
+   "st"
+  ]
+ },
  "isbadp": {},
  "iscwr": {
   "castes": [
@@ -11643,6 +11776,7 @@
   "occupation": "student"
  },
  "kvsy": {
+  "gender": "female",
   "occupation": "worker"
  },
  "kvy": {
@@ -11862,6 +11996,9 @@
   "occupation": "worker"
  },
  "ltltscosmuscp": {
+  "castes": [
+   "sc"
+  ],
   "occupation": "farmer"
  },
  "ltmbocwwb": {
@@ -12023,7 +12160,8 @@
   "min_age": 18,
   "castes": [
    "sc"
-  ]
+  ],
+  "gender": "female"
  },
  "marry": {
   "max_income": 400000,
@@ -13296,6 +13434,9 @@
   "occupation": "worker"
  },
  "ndriis": {
+  "castes": [
+   "sc"
+  ],
   "occupation": "student"
  },
  "nebps": {},
@@ -14871,6 +15012,9 @@
  "rams-to-sheep-breeders": {},
  "randd": {},
  "rassnb": {
+  "castes": [
+   "sc"
+  ],
   "bpl": true,
   "residence": "rural"
  },
@@ -15024,6 +15168,11 @@
  "rof": {},
  "rotffssipsic": {
   "max_income": 200000,
+  "castes": [
+   "obc",
+   "sc",
+   "st"
+  ],
   "occupation": "student"
  },
  "rpa": {
@@ -15269,6 +15418,9 @@
  "sarderd": {},
  "sarsjr": {},
  "sas": {
+  "castes": [
+   "st"
+  ],
   "occupation": "student"
  },
  "sascste": {
@@ -15316,6 +15468,9 @@
   "occupation": "worker"
  },
  "satgmsa": {
+  "castes": [
+   "sc"
+  ],
   "occupation": [
    "farmer",
    "student"
@@ -15393,6 +15548,7 @@
   "castes": [
    "sc"
   ],
+  "gender": "female",
   "occupation": "student"
  },
  "scddrge": {
@@ -15911,7 +16067,11 @@
   "min_age": 58
  },
  "sgs": {},
- "sgsccs": {},
+ "sgsccs": {
+  "castes": [
+   "st"
+  ]
+ },
  "sgscs": {
   "castes": [
    "sc"
@@ -15933,6 +16093,9 @@
   "occupation": "worker"
  },
  "sgsts": {
+  "castes": [
+   "st"
+  ],
   "occupation": "student"
  },
  "shbpmna": {
@@ -15940,6 +16103,7 @@
  },
  "sheambgoc": {
   "max_income": 800000,
+  "gender": "female",
   "occupation": "student"
  },
  "shnh-pipdic": {
@@ -16092,6 +16256,7 @@
   "residence": "rural"
  },
  "skvsyukbocwwb": {
+  "gender": "female",
   "occupation": "worker"
  },
  "slafpwd": {},
@@ -16571,6 +16736,9 @@
  },
  "sse100bbfsc": {},
  "sse25rbusc": {
+  "castes": [
+   "sc"
+  ],
   "bpl": true
  },
  "sse25rbuwse": {
@@ -16744,6 +16912,9 @@
   "occupation": "student"
  },
  "ssst-pts": {
+  "castes": [
+   "st"
+  ],
   "bpl": true
  },
  "ssstss": {
@@ -16925,9 +17096,18 @@
   "occupation": "worker"
  },
  "supply-of-school-uniform-and-tie-belt": {
+  "castes": [
+   "sc",
+   "st"
+  ],
   "occupation": "student"
  },
  "supply-of-school-uniform-tie-belt": {
+  "castes": [
+   "sc",
+   "st"
+  ],
+  "gender": "female",
   "occupation": "student"
  },
  "supply-of-stationery": {
@@ -17130,7 +17310,8 @@
  },
  "thgmbs": {
   "min_age": 18,
-  "max_age": 60
+  "max_age": 60,
+  "gender": "female"
  },
  "thrgrr-sw": {},
  "thsdse": {
@@ -17728,9 +17909,11 @@
   ]
  },
  "wphbocwwb": {
+  "gender": "female",
   "occupation": "worker"
  },
  "wpshpbocwwb": {
+  "gender": "female",
   "occupation": "worker"
  },
  "wpwb": {
@@ -17799,7 +17982,9 @@
  "yipb": {
   "disability": true
  },
- "ymdwmdsrs": {},
+ "ymdwmdsrs": {
+  "gender": "female"
+ },
  "ypidnabftcw": {
   "min_age": 18,
   "max_age": 60,
