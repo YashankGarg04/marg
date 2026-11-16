@@ -34,6 +34,17 @@ def dummy_scorer(pairs):
     return np.array(out, dtype=np.float32)
 
 
+def fuse_scores(shape, cand, sc, w, k=60):
+    """Blend of two opinions inside each query's candidate list:
+    1/(k+rank by first stage) + w/(k+rank by reranker).  cand rows are already best-first for the first stage."""
+    out = np.full(shape, -1e9, dtype=np.float32)
+    for i in range(len(cand)):
+        r2 = np.empty(len(cand[i]), dtype=np.int64)
+        r2[np.argsort(-sc[i])] = np.arange(len(cand[i]))
+        out[i, cand[i]] = 1.0 / (k + np.arange(len(cand[i])) + 1) + w / (k + r2 + 1)
+    return out
+
+
 def load_scorer(name, batch, fp16):
     if name == "dummy":
         return dummy_scorer
@@ -61,6 +72,9 @@ def main():
     ap.add_argument("--reranker", default="BAAI/bge-reranker-v2-m3")
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--no-fp16", action="store_true")
+    ap.add_argument("--fuse", nargs="+", type=float, default=[],
+                    help="also score blends of first-stage rank and reranker rank, e.g. --fuse 0.25 0.5 1 2 "
+                         "(weight of the reranker; 1 = equal). Saved as <name>_f<weight>")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--tag", default="")
     args = ap.parse_args()
@@ -96,7 +110,17 @@ def main():
     final = np.full(first.shape, -1e9, dtype=np.float32)
     for i in range(len(queries)):
         final[i, cand[i]] = sc[i]
+    fused_finals = {w: fuse_scores(first.shape, cand, sc, w) for w in args.fuse}
 
+    for w, fin in fused_finals.items():
+        per_w = evaluate(fin, queries, slug_index, slugs)
+        o = summarize(per_w)["ALL"]
+        print(f"blend, reranker weight {w:g}: target@1={o['target@1']:.3f}  @3={o['target@3']:.3f}  "
+              f"@10={o['target@10']:.3f}  MRR={o['MRR']:.3f}")
+        nm = "rerank" + (f"_{args.tag}" if args.tag else "") + f"_f{w:g}"
+        json.dump({"method": nm, "split": args.split, "overall": o, "by_language": summarize(per_w, "language"),
+                   "by_noise": summarize(per_w, "noise_level"), "by_row_type": summarize(per_w, "row_type")},
+                  open(out / f"retrieval_{args.split}_{nm}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     per = evaluate(final, queries, slug_index, slugs)
     name = "rerank" + (f"_{args.tag}" if args.tag else "")
     result = {"method": name, "split": args.split, "retriever": args.model,
