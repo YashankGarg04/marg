@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from eligibility import NO, YES, scheme_status  # noqa: E402
-from pipeline import DenseSearcher, Marg, load_rules  # noqa: E402
+from pipeline import DenseSearcher, Marg, RerankSearcher, load_rules  # noqa: E402
 
 
 def main():
@@ -32,9 +32,14 @@ def main():
     ap.add_argument("--order", default="status", choices=["status", "search"],
                     help="status = confirmed matches first; search = keep the search order, only remove ruled-out schemes")
     ap.add_argument("--model", default="", help="folder of the fine-tuned model -> dense+BM25 search (needs card embeddings)")
+    ap.add_argument("--reranker", default="", help="folder of the fine-tuned reranker (needs --model too)")
+    ap.add_argument("--rerank-weight", type=float, default=2.0)
     ap.add_argument("--tag", default="")
     args = ap.parse_args()
-    searcher = DenseSearcher(args.model) if args.model else None
+    if args.model and args.reranker:
+        searcher = RerankSearcher(args.model, args.reranker, weight=args.rerank_weight)
+    else:
+        searcher = DenseSearcher(args.model) if args.model else None
     marg = Marg(searcher=searcher, mode=args.mode)
     truth_rules, _ = load_rules(mode="benchmark")          # scores are always judged by the dataset's rules
     rows = [json.loads(l) for l in open(f"data/splits/{args.split}.jsonl", encoding="utf-8")]
@@ -44,7 +49,7 @@ def main():
     rows = rows[:args.n]
     if searcher:
         searcher.prepare([" ".join(r["turns"]) if r["n_turns"] > 1 else r["query"] for r in rows])
-    print(f"{len(rows)} queries ({args.split}), rules: {args.mode}, order: {args.order}, search: {'fine-tuned dense + BM25' if args.model else 'BM25'}")
+    print(f"{len(rows)} queries ({args.split}), rules: {args.mode}, order: {args.order}, search: {'fine-tuned dense + BM25 + reranker' if args.reranker else 'fine-tuned dense + BM25' if args.model else 'BM25'}")
     gold = marg.known
     modes = ["search only", "+ query details", "+ form + query"]
     stat = {m: dict(t3=0, anyel=0, shown=0, known=0, bad=0, drop=0, droppable=0, yes=0) for m in modes}

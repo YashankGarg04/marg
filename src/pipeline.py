@@ -100,6 +100,31 @@ class DenseSearcher:
         return [self.slugs[i] for i in np.argsort(-fused)[:k]]
 
 
+class RerankSearcher(DenseSearcher):
+    """Fine-tuned search -> top 30 -> fine-tuned reranker re-reads (query, card) pairs -> blend of both opinions.
+    weight 2 on the reranker was the best blend on the validation split (target@3 0.704 against 0.658 for search alone)."""
+
+    def __init__(self, model_dir, reranker, data="data", weight=2.0, topk=30, **kw):
+        super().__init__(model_dir, data, **kw)
+        from sentence_transformers import CrossEncoder
+        self.ce = CrossEncoder(str(reranker), max_length=512)
+        try:
+            self.ce.model.half()
+        except Exception:                                   # noqa: BLE001  (no GPU: stay in fp32)
+            pass
+        self.rw, self.topk, self.memo = weight, topk, {}
+        self.text = {c["slug"]: c["text"] for c in self.cards}
+
+    def top(self, text, k=30):
+        if text not in self.memo:
+            cand = super().top(text, self.topk)
+            sc = self.ce.predict([(text, self.text[x]) for x in cand], batch_size=32, show_progress_bar=False)
+            r2 = {x: r for r, x in enumerate(sorted(cand, key=lambda x: -sc[cand.index(x)]))}
+            fused = {x: 1.0 / (60 + i + 1) + self.rw / (60 + r2[x] + 1) for i, x in enumerate(cand)}
+            self.memo[text] = sorted(cand, key=lambda x: -fused[x])
+        return self.memo[text][:k]
+
+
 class Marg:
     def __init__(self, data="data", searcher=None, mode="benchmark"):
         self.mode = mode
